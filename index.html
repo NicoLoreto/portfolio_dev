@@ -1,0 +1,93 @@
+<!--portfolio creado en base al video PROGRAMANDO un PORTFOLIO desde CERO con HTML, CSS y Javascript | 
+    Eduardo Fierro Pro
+!-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href="estilos.css"> 
+    <title>Nico Loreto | Portfolio profesional developer</title>
+</head>
+<body>
+    <!--header.header>(h1.h1>a.a{Nico Loreto})+(nav.nav>ul.ul.li.li*3>a.a{Item $})!-->
+    <header class="header">
+        <h1 class="h1"><a href="#Inicio" title="Nico Loreto" class="a">Nico Loreto</a></h1>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="#Inicio" class="a" title="Inicio">Inicio</a></li>
+                <li class="li"><a href="#Trabajos" class="a" title="Trabajos">Trabajos</a></li>
+                <li class="li"><a href="#Acerca de" class="a" title="Acerca de">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!---->
+    <!--MAIN-->
+    <main class="main">
+        <div class="seccion" id="Inicio">
+            <div class="circulos">
+                <div class="circulo"></div>
+                <div class="circulo"></div>
+                <div class="circulo"></div>
+                <div class="circulo"></div>
+                <div class="circulo"></div>
+            </div>
+        
+            <seccion class="seccion">
+                <h2 class="h2">Nico Loreto
+                    <h3 class="h3">Desarrollador Web</h3>
+                </h2>
+            </seccion>
+        
+        </div>
+            <seccion class="seccion" id="Trabajos">
+                <h2 class="h2">Trabajos</h2>
+                <p class="p">Algunos de mis trabajos</p>
+                <div class="grid">
+                    <!--article.article>img.img[src="#" alt= "imagen" loading="lazy"]+h4.h4{"Poesía aleatoria"}-->
+                    <article class="article">
+                        <a class = "a" href="#" title="Poesía aleatoria">
+                            <figure class="figure">
+                                <img src="#" alt="imagen" class="img" loading="lazy">
+                            </figure>
+                        <h4 class="h4">"Poesía aleatoria"</h4>
+                        </a>
+                    </article>
+                    <!--article.article>img.img[src="#" alt= "imagen" loading="lazy"]+h4.h4{"Poesía aleatoria"}-->
+                    <article class="article">
+                        <a class = "a" href="#" title="Poesía aleatoria">
+                            <figure class="figure">
+                                <img src="#" alt="imagen" class="img" loading="lazy">
+                            </figure>
+                        <h4 class="h4">"Poesía aleatoria"</h4>
+                        </a>
+                    </article>              
+            </div>
+            </seccion>
+        <div class="seccion">
+            <seccion class="seccionacercade" id="acercade">
+                <h2 class="h2">Acerca de</h2>
+                    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, placeat autem temporibus earum harum quia.</p>
+                    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, placeat autem temporibus earum harum quia.</p>
+                    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, placeat autem temporibus earum harum quia.</p>
+                <ul class="redessociales">
+                    <!--li.li>a.a[href="#" title="Nombre" target="_blank" rel="noopener noreference"]>sgv.sgv-->
+                    <li class="li">
+                        <a href="#" class="a" title="Nombre" target="_blank" rel="noopener noreference">
+                            <sgv class="sgv"></sgv>
+                        </a>
+                    </li>
+                </ul>
+            </seccion>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+        <span class="span">
+            <p class="p">Hecho con amor ❤️ Nico Loreto</p>
+        </span>
+       
+    </footer>
+</body>
+</html>
