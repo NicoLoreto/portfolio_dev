@@ -102,7 +102,7 @@ body{
     font-family: var(--tipo-principal);
     font-size: 100%;
     min-height: 100vh;
-    background-color: var(--blanco);
+    /*background-color: var(--blanco);*/
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -117,11 +117,11 @@ body{
     height: 100%;
     top: 0;
     left: 0;
-    background: lightblue;
+    /*background: lightblue;*/
     /*Cuando varios elementos se superponen, los elementos 
     con mayor valor 
     z-index cubren aquellos con menor valor.*/
-    z-index: 1;
+    /*z-index: 1;*/
     animation:circulo 20s linear infinite both;
 }
 .circulos .circulo{
@@ -131,7 +131,7 @@ body{
     position:absolute;
     width: 50%;
     height: 50%;
-    filter: blur(70px);
+    filter: blur(20px);
     animation:circulo 100s linear infinite both;
 
 }
@@ -151,7 +151,7 @@ fill: rgb(12, 121, 60);
 
 
 .circulos .circulo2 .path{
-fill: rgb(3, 2, 2);
+fill: rgb(105, 65, 65);
 }
 .circulos .circulo2{
 top: 0%;
@@ -228,7 +228,7 @@ right: 0%;
     margin: 0 0 0em;
     text-align: center;
     position: relative;
-    z-index: 2;
+    /*z-index: 2;*/
 }
 .seccion{
     
@@ -258,11 +258,11 @@ right: 0%;
 }
 .seccion .ul .li .a{
     /*subrayo por encima*/
-    /*border-top: 1px solid rgb(0,0,0,.4);*/
+    border-top: 1px solid rgb(0,0,0,.4);
 
     /*redondeo*/
-    border-radius: 50%;
-    border: 1px solid rgb(0,0,0,.2);
+    /*border-radius: 50%;*/
+    /*border: 1px solid rgb(0,0,0,.2);*/
     padding: 1em 1em 1em;
     text-transform: uppercase;
     font-weight: 600;
@@ -276,6 +276,8 @@ right: 0%;
 /*cuando entre el mouse pasara esto*/
 .seccion .ul .li .a:hover{
    border-color: black;
+   border: 1px solid rgb(0,0,0,.2);
+  
    
 
 }
@@ -302,7 +304,7 @@ right: 0%;
     width: 90%;
     
     display: grid;
-    margin: 1em 0;
+    margin: 2em 0 ;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     /*separar uno del otro*/
     gap: 1em;
@@ -325,11 +327,11 @@ right: 0%;
 .seccion .a{}
 .seccion .figure{
     width: 100%;
-    background: red;
+    /*background: red;*/
 }
 .seccion .img{
     width: 100%;
-    background: greenyellow;
+    /*background: greenyellow;*/
 }
 .seccion .h4{
     width: 100%;
@@ -367,12 +369,31 @@ right: 0%;
     transform: translateZ(1) scale(1);
 
 }
-.trabajos .h2{
-    margin: 0 0 1rem;
+
+.trabajos{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
-.acercade{}
+.trabajos .h2{
+    margin: 0 0 1.5rem;
+    
+}
+
+.trabajos .p{
+font-family: var(--tipo-titular);
+text-transform: uppercase;
+/*background: green;*/
+}
+
+.acercade{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .acercade .h2{
     margin: 0 0 2rem;
+
 }
 .acercade .p{
     max-width: 40rem;
@@ -382,6 +403,8 @@ right: 0%;
     /*arriba, a la derecha, abajo, a la izquierda*/
     margin: 0 0 1rem;
     font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
 }
 .acercade .redessociales{
     width: 100%;
@@ -408,9 +431,10 @@ right: 0%;
     /*padding por arriba y por abajo*/
     padding: 2em 0;
     text-align: center;
+   
     
 }
-.fotter .span{
+.footer .span{
 
 }
 
