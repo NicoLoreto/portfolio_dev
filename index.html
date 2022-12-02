@@ -11,6 +11,23 @@
     <title>Nico Loreto | Portfolio profesional developer</title>
 </head>
 <body>
+    <div class="circulos">
+        <!--aca pego el codigo de la forma que saque de la pagina
+        https://www.blobmaker.app/ -->
+        <!--agrego en la etiqueta path la clase path para darle yo el color-->
+        <svg class = "circulo circulo1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class = "path" d="M40.1,-53.2C48.8,-40.5,50.4,-24.9,56.7,-7.3C62.9,10.2,73.7,29.5,68.5,40.4C63.2,51.3,41.8,53.7,23.9,56.1C5.9,58.6,-8.6,61,-26,59.7C-43.4,58.4,-63.6,53.4,-69.9,41.1C-76.2,28.7,-68.5,9,-60.4,-6.1C-52.3,-21.1,-43.8,-31.5,-33.6,-43.9C-23.5,-56.3,-11.7,-70.7,2,-73C15.7,-75.4,31.5,-65.8,40.1,-53.2Z" transform="translate(100 100)" />
+          </svg>
+          <svg class = "circulo circulo2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path  class = "path" d="M41.4,-59.6C56.2,-54.8,72.7,-47.8,78.3,-35.7C83.8,-23.7,78.5,-6.6,75,10.1C71.6,26.9,70.2,43.2,60.4,49.7C50.7,56.1,32.6,52.7,17.8,54.1C3,55.5,-8.5,61.7,-17.8,59.5C-27.1,57.2,-34.3,46.6,-46.8,37.5C-59.4,28.5,-77.4,21.1,-83.1,9.4C-88.9,-2.4,-82.3,-18.5,-73.3,-31.5C-64.3,-44.5,-52.8,-54.4,-40.2,-60.2C-27.5,-66.1,-13.8,-67.9,-0.3,-67.5C13.3,-67.1,26.5,-64.5,41.4,-59.6Z" transform="translate(100 100)" />
+          </svg>
+          <svg class = "circulo circulo3" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class = "path" d="M55.2,-64.1C67.5,-55.4,70.8,-34.2,71.2,-15C71.7,4.2,69.4,21.5,62.6,38.8C55.8,56.1,44.4,73.4,29.8,76.4C15.2,79.3,-2.7,67.9,-18,58.4C-33.3,48.9,-46,41.4,-53.2,30.1C-60.5,18.9,-62.2,3.8,-59.7,-10.6C-57.2,-24.9,-50.5,-38.6,-39.9,-47.6C-29.2,-56.6,-14.6,-61.1,3.4,-65.1C21.4,-69.2,42.8,-72.9,55.2,-64.1Z" transform="translate(100 100)" />
+          </svg>
+          <svg class = "circulo circulo4" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path  class = "path" d="M66.7,-21.2C73.2,-1.7,56.1,26,32.5,42.6C8.9,59.2,-21.1,64.8,-41.4,51.4C-61.8,38,-72.4,5.5,-63.8,-16.8C-55.3,-39.2,-27.7,-51.4,1.2,-51.8C30.1,-52.2,60.2,-40.8,66.7,-21.2Z" transform="translate(100 100)" />
+          </svg>
+    </div>
     <!--header.header>(h1.h1>a.a{Nico Loreto})+(nav.nav>ul.ul.li.li*3>a.a{Item $})!-->
     <header class="header">
         <h1 class="h1"><a href="#Inicio" title="Nico Loreto" class="a">Nico Loreto</a></h1>
@@ -25,48 +42,53 @@
     <!---->
     <!--MAIN-->
     <main class="main">
+
         <div class="seccion" id="Inicio">
-            <div class="circulos">
-                <div class="circulo"></div>
-                <div class="circulo"></div>
-                <div class="circulo"></div>
-                <div class="circulo"></div>
-                <div class="circulo"></div>
-            </div>
+            
         
-            <seccion class="seccion">
+            <seccion class="seccion info">
                 <h2 class="h2">Nico Loreto
                     <h3 class="h3">Desarrollador Web</h3>
                 </h2>
+            <ul class="ul">
+                <!--con flex en css alineo una caja al lado de otra-->
+                <li class="li">
+                    <a href="#" class="a" title="Linkedin">Vistitar mi Linkedin</a>
+                </li>
+                <li class="li">
+                    <a href="#" class="a" title="Github">Vistitar mi Github</a>
+                </li>
+            </ul>
             </seccion>
         
         </div>
-            <seccion class="seccion" id="Trabajos">
+            <seccion class="seccion trabajos" id="Trabajos">
                 <h2 class="h2">Trabajos</h2>
                 <p class="p">Algunos de mis trabajos</p>
                 <div class="grid">
                     <!--article.article>img.img[src="#" alt= "imagen" loading="lazy"]+h4.h4{"Poesía aleatoria"}-->
                     <article class="article">
-                        <a class = "a" href="#" title="Poesía aleatoria">
+                        <a class = "a" href="#" title="HCP">
                             <figure class="figure">
-                                <img src="#" alt="imagen" class="img" loading="lazy">
+                                <img src="/assets/HCP.jpg" alt="imagen" class="img" loading="lazy">
                             </figure>
-                        <h4 class="h4">"Poesía aleatoria"</h4>
+                        <h4 class="h4">Historia Clínica Personal</h4>
                         </a>
                     </article>
                     <!--article.article>img.img[src="#" alt= "imagen" loading="lazy"]+h4.h4{"Poesía aleatoria"}-->
                     <article class="article">
                         <a class = "a" href="#" title="Poesía aleatoria">
                             <figure class="figure">
-                                <img src="#" alt="imagen" class="img" loading="lazy">
+                                <img src="/assets/poesia.png" alt="imagen" class="img" loading="lazy">
                             </figure>
-                        <h4 class="h4">"Poesía aleatoria"</h4>
+                        <h4 class="h4">Poesía aleatoria</h4>
                         </a>
                     </article>              
             </div>
             </seccion>
-        <div class="seccion">
-            <seccion class="seccionacercade" id="acercade">
+            <!--tener cuidado con dos nombres de clase, hay que poner
+            los dos entre las comillas-->
+            <seccion class="seccion acercade" id="acercade">
                 <h2 class="h2">Acerca de</h2>
                     <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, placeat autem temporibus earum harum quia.</p>
                     <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, placeat autem temporibus earum harum quia.</p>
@@ -75,12 +97,27 @@
                     <!--li.li>a.a[href="#" title="Nombre" target="_blank" rel="noopener noreference"]>sgv.sgv-->
                     <li class="li">
                         <a href="#" class="a" title="Nombre" target="_blank" rel="noopener noreference">
-                            <sgv class="sgv"></sgv>
+                            <!--traigo de bootstraps icons los iconos-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                              </svg>
+                        </a>
+                    </li>
+                    <li class="li">
+                        <a href="#" class="a" title="Nombre" target="_blank" rel="noopener noreference">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                              </svg>
                         </a>
                     </li>
                 </ul>
             </seccion>
-        </div>
+            <footer class="footer">
+                <span class="span">
+                    <p class="p">Hecho con amor ❤️ Nico Loreto</p>
+                </span>
+               
+            </footer>
     </main>
     <!--FOOTER-->
     <footer class="footer">

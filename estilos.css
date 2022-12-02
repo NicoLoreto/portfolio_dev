@@ -1,4 +1,25 @@
-/*probando en git*/
+@font-face {
+    font-family:Playfair Display;
+    src: url(./fonts/PlayfairDisplay-Regular.ttf);
+}:root {
+    --blanco: #e0e0e0;
+    --blanco-2: rgba(255,255,255,.2);
+    --negro: #181818;
+    --negro-5: rgba(0, 0, 0, 0.5);
+    --negro-7: rgba(0, 0, 0, 0.75);
+    --tipo-titular:'Playfair Display', serif;
+    --tipo-principal:'Inter', sans-serif;
+  }
+  
+  @media screen and (prefers-color-scheme:light){
+    :root {
+      --blanco: #181818;
+      --blanco-2: rgba(0,0,0,.2);
+      --negro: #e0e0e0;
+      --negro-5: rgba(255, 255, 255, 0.5);
+      --negro-7: rgba(255, 255, 255, 0.75);
+    }
+  }
 
 *{
     margin: 0;
@@ -87,6 +108,76 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
+/*FONDO CIRCULOS*/
+
+.circulos{
+    /*posicion fija*/
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: lightblue;
+    /*Cuando varios elementos se superponen, los elementos 
+    con mayor valor 
+    z-index cubren aquellos con menor valor.*/
+    z-index: 1;
+    animation:circulo 20s linear infinite both;
+}
+.circulos .circulo{
+    /*en la pag https://www.blobmaker.app/ puedo amrar y 
+    usar los svg como quiera
+    y copiar el codigo*/
+    position:absolute;
+    width: 50%;
+    height: 50%;
+    filter: blur(70px);
+    animation:circulo 100s linear infinite both;
+
+}
+
+.circulos .circulo1{
+    top: 0%;
+    left: 0%;
+    
+    }
+  
+
+.circulos .circulo1 .path{
+/*agrego fill para darle color*/
+fill: rgb(12, 121, 60);
+}
+
+
+
+.circulos .circulo2 .path{
+fill: rgb(3, 2, 2);
+}
+.circulos .circulo2{
+top: 0%;
+right: 0%;
+}
+.circulos .circulo3 .path{
+fill: rgb(154, 100, 13);
+}
+
+.circulos .circulo3{
+bottom: 0%;
+left: 0%;
+}
+.circulos .circulo4 .path{
+fill: rgb(96, 105, 230);
+}
+.circulos .circulo4{
+bottom: 0%;
+right: 0%; 
+}
+
+
+
+
+
+
 .header{
     /*width: 100%;*/
     /*nunca usar altura si no es una posiscion absoluta
@@ -98,9 +189,11 @@ body{
     1 por arriba y por abajo y 2 por cada lateral*/
     padding: 1em 2em;
 /*para alinear uno al lado del otro anado flex*/
-    display: flex;
+    display: none;
     flex-flow: row wrap;
-    /* con space - between todo el espacio disponible se coloca entre el primer y el último artículo, empujando ambos artículos hacia los bordes opuestos del contenedor.*/
+    /* con space - between todo el espacio disponible se coloca entre el 
+    primer y el último artículo, empujando ambos artículos hacia los bordes 
+    opuestos del contenedor.*/
     justify-content: space-between;
     align-items: center;
 }
@@ -127,21 +220,23 @@ body{
 }
 .header .ul .li .a{}
 
-/*main*/
+/*MAIN*/
 
 .main{
-    background: gray;
+    
     /*hago un margin para que se separe*/
-    margin: 0 1em;
+    margin: 0 0 0em;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 .seccion{
     
     /*vh se usa para el tamano de la pantalla*/
     min-height: 80vh;
-    background: lightblue;
+    
     /*separo con margin*/
-    margin: 1em 0;
+    /*margin: 1em 0;*/
     text-align: center;
     display: flex;
     flex-flow: column wrap;
@@ -149,14 +244,63 @@ body{
     align-items: center;
     padding: 2em;
 }
-.seccion .circulos{}
-.seccion .circulo{}
-.seccion .h2{}
-.seccion .h3{}
+.seccion .ul{
+    /*background: red;*/
+    margin: 2em 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.seccion .ul .li{
+    /*background: greenyellow;*/
+    margin: 0 1em;
+}
+.seccion .ul .li .a{
+    /*subrayo por encima*/
+    /*border-top: 1px solid rgb(0,0,0,.4);*/
+
+    /*redondeo*/
+    border-radius: 50%;
+    border: 1px solid rgb(0,0,0,.2);
+    padding: 1em 1em 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    /*Permite definir la transición entre dos estados de 
+    un elemento. Hay diferentes estados que pueden ser definidos 
+    utilizando pseudo-clases (en-US) como :hover o :active o 
+    aplicado dinámicamente usando JavaScript.*/
+    transition: all .5s ease;
+}
+
+/*cuando entre el mouse pasara esto*/
+.seccion .ul .li .a:hover{
+   border-color: black;
+   
+
+}
+.seccion .h2{
+    font-family: var(--tipo-titular);
+    font-size: 5em;
+    /*negrita*/
+    font-weight: 600;
+    line-height: 1em;
+    
+    
+}
+.seccion .h3{
+    font-family: var(--tipo-titular);
+    font-size: 4.3em;
+    
+}
+.seccion .info{
+    font-size: 1.2em;
+}
 .seccion .p{}
 .seccion .grid{
+    max-width: 40em;
     width: 90%;
-    background: lightcoral;
+    
     display: grid;
     margin: 1em 0;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -167,13 +311,15 @@ body{
 }
 .seccion .article{
     width: 100%;
-    background: lightgoldenrodyellow;
+    /*background: lightgoldenrodyellow;*/
     min-height: 20vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     position: relative;
+    /*para que no sobrepase cuando haga el efecto traslate*/
+    overflow: hidden;
     
 }
 .seccion .a{}
@@ -187,8 +333,8 @@ body{
 }
 .seccion .h4{
     width: 100%;
-    height: 50%;
-    background: coral;
+    height: 100%;
+    background-color: rgb(255,255,255,rgba(0, 0, 0, 0.5));
     position: absolute;
     bottom: 0;
     left: 0;
@@ -196,15 +342,85 @@ body{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    /*filtro la imagen*/
+    backdrop-filter: blur(1rem);
+    /*opacidad*/
+    opacity: 0;
+    transition: all .5s ease;
+    color: rgb(22, 15, 15);
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-family: var(--tipo-titular);
+    font-style: italic;
+    /*efecto en el eje X para generear movimiento*/
+    /*transform: translateX(100%);*/
+
+    /*efecto de adentro para afuera con scale,
+    para evitar el fail translateZ que siempre este en 1*/
+
+    transform: translateZ(1) scale(1.2);
 }
-.seccionacercade{}
-.seccionacercade .h2{}
-.seccionacercade .p{}
-.seccionacercade .redessociales{
+
+.seccion .article:hover .h4{
+    opacity: 1;
+    /*transform: translateX(0%);*/
+    transform: translateZ(1) scale(1);
+
+}
+.trabajos .h2{
+    margin: 0 0 1rem;
+}
+.acercade{}
+.acercade .h2{
+    margin: 0 0 2rem;
+}
+.acercade .p{
+    max-width: 40rem;
+    /*background: greenyellow;*/
+    /*alineo a la izquierda*/
+    text-align: left;
+    /*arriba, a la derecha, abajo, a la izquierda*/
+    margin: 0 0 1rem;
+    font-size: 1.5em;
+}
+.acercade .redessociales{
+    width: 100%;
+    /*background: lightgreen;*/
     list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
-.seccionacercade .li{}
-.seccionacercade .a{}
-.seccionacercade .svg{}
+.acercade .li{
+    margin: 0 1em;
+    /*background: orange;*/
+}
+.acercade .a{}
+.acercade .svg{
+    width: 2em;
+    height: 2em;
+    /*background: red;*/
+}
 
+.footer{
+    
+    /*padding por arriba y por abajo*/
+    padding: 2em 0;
+    text-align: center;
+    
+}
+.fotter .span{
 
+}
+
+  /*ANIMACION*/
+    
+  @keyframes circulo{
+    from{
+        transform:rotate(0deg) scale(3);
+    }
+    to{
+        transform:rotate(360deg) scale(3);
+    }
+}
