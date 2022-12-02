@@ -174,10 +174,6 @@ right: 0%;
 }
 
 
-
-
-
-
 .header{
     /*width: 100%;*/
     /*nunca usar altura si no es una posiscion absoluta
@@ -289,6 +285,7 @@ right: 0%;
     line-height: 1em;
     
     
+    
 }
 .seccion .h3{
     font-family: var(--tipo-titular);
@@ -392,7 +389,7 @@ text-transform: uppercase;
     text-align: center;
 }
 .acercade .h2{
-    margin: 0 0 2rem;
+    margin: 0 0 4rem;
 
 }
 .acercade .p{
@@ -407,6 +404,7 @@ text-transform: uppercase;
     align-items: center;
 }
 .acercade .redessociales{
+    margin: 5rem 0 0 0;
     width: 100%;
     /*background: lightgreen;*/
     list-style: none;
