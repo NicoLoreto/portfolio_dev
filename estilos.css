@@ -199,7 +199,9 @@ right: 0%;
     /*background: lightgrey;*/
     
 }
-.header .h1 .a{}
+.header .h1 .a{
+    
+}
 .header .nav{
    
 }
@@ -216,7 +218,9 @@ right: 0%;
     margin: 0 1em;
     /*background: rgb(153, 207, 153);*/
 }
-.header .ul .li .a{}
+.header .ul .li .a{
+
+}
 
 /*MAIN*/
 
@@ -269,7 +273,18 @@ right: 0%;
     utilizando pseudo-clases (en-US) como :hover o :active o 
     aplicado dinámicamente usando JavaScript.*/
     transition: all .5s ease;
+    animation: aparecer1 3s ease 1 backwards;
 }
+
+/*que la segunda etiqueta a haga una animacion distinta, que entre
+mas tarde
+notar que con ul>:nth-child(2) me refiero al segundo hijo
+de ul, es decir el segundo li con etiqueta a*/
+
+.seccion .ul>:nth-child(2) .a{
+    animation-delay: 1s;
+}
+
 
 /*cuando entre el mouse pasara esto*/
 .seccion .ul .li .a:hover{
@@ -294,6 +309,8 @@ right: 0%;
 .seccion .h3{
     font-family: var(--tipo-titular);
     font-size: 4.3em;
+    /*que aparezca una letra por vez*/
+    /*animation: escribiendo 5s steps(36, end);*/
     
 }
 .seccion .info{
@@ -381,11 +398,12 @@ right: 0%;
 }
 
 .trabajos{
+    
     margin-top: 5em;
     border-bottom: 1px solid white;
     border-top: 1px solid white;
-    background-color: rgba(8, 7, 7, 0.135);
-    color: black;
+    background-color: rgba(8, 7, 7, 0.411);
+    margin: auto;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -477,4 +495,9 @@ text-transform: uppercase;
         opacity: 1;
         transform: translateY(0%)
     }
+}
+
+/*@keyframes escribiendo{
+	from{width:100%}
+	to{width:0}
 }
