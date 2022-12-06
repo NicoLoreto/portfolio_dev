@@ -555,8 +555,10 @@ un enlace*/
 
 /*cuando sea menor a 720px*/
 @media (max-width: 920px){
-    .seccion{
+    .seccion .info, .acercade, .trabajos{
         font-size: .5em;
+        margin: 8em 0 0 0;
+        
     }
     body{
         cursor:auto;
@@ -566,6 +568,9 @@ un enlace*/
     }
     a{
         cursor:pointer;
+    }
+    .acercade{
+        margin-top: 1em;
     }
     .acercade .p{
         font-size: 1.5rem;
