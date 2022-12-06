@@ -474,6 +474,7 @@ text-transform: uppercase;
     width: 2em;
     height: 2em;
     
+    
 }
 
 .footer{
@@ -553,12 +554,27 @@ un enlace*/
 }
 
 /*cuando sea menor a 720px*/
-@media (max-width: 720px){
+@media (max-width: 920px){
     .seccion{
         font-size: .5em;
     }
+    body{
+        cursor:auto;
+    }
     #cursor{
         display: none;
+    }
+    a{
+        cursor:pointer;
+    }
+    .acercade .p{
+        font-size: 2rem;
+    }
+
+    .acercade .svg{
+        width: 6em;
+        height: 6em;
+        
     }
 }
 
