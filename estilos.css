@@ -11,6 +11,7 @@
     --tipo-principal:'Inter', sans-serif;
   }
   
+  /*para cambiar a modo dark o light*/
   @media screen and (prefers-color-scheme:light){
     :root {
       --blanco: #181818;
@@ -20,6 +21,7 @@
       --negro-7: rgba(255, 255, 255, 0.75);
     }
   }
+
 
 *{
     margin: 0;
@@ -44,6 +46,8 @@ a{
     display: block;
     text-decoration: none;
     color: inherit;
+    transition: all .5s ease;
+    animation: aparecer1 3s ease 1 backwards;
 
 }
 
@@ -122,7 +126,7 @@ body{
     height: 100%;
     top: 0;
     left: 0;
-    /*background: lightblue;*/
+  
     /*Cuando varios elementos se superponen, los elementos 
     con mayor valor 
     z-index cubren aquellos con menor valor.*/
@@ -181,7 +185,7 @@ right: 0%;
 
 
 .header{
-    /*width: 100%;*/
+    width: 100%;
     /*nunca usar altura si no es una posiscion absoluta
     nunca en porcentaje
     usar minimo de altura*/
@@ -198,6 +202,10 @@ right: 0%;
     opuestos del contenedor.*/
     justify-content: space-between;
     align-items: center;
+    padding: 2em 0;
+    text-align: center;
+    z-index: 2;
+    position: relative;
 }
 .header .h1{
     /*background: lightgrey;*/
@@ -207,7 +215,7 @@ right: 0%;
     
 }
 .header .nav{
-   
+    
 }
 .header .ul{
     display: flex;
@@ -251,7 +259,7 @@ right: 0%;
     padding: 2em;
 }
 .seccion .ul{
-    /*background: red;*/
+    
     margin: 2em 0 0;
     display: flex;
     flex-flow: row wrap;
@@ -259,7 +267,7 @@ right: 0%;
     align-items: center;
 }
 .seccion .ul .li{
-    /*background: greenyellow;*/
+    
     margin: 0 1em;
 }
 .seccion .ul .li .a{
@@ -276,8 +284,7 @@ right: 0%;
     un elemento. Hay diferentes estados que pueden ser definidos 
     utilizando pseudo-clases (en-US) como :hover o :active o 
     aplicado dinámicamente usando JavaScript.*/
-    transition: all .5s ease;
-    animation: aparecer1 3s ease 1 backwards;
+   
 }
 
 /*que la segunda etiqueta a haga una animacion distinta, que entre
@@ -318,10 +325,12 @@ de ul, es decir el segundo li con etiqueta a*/
     
 }
 .seccion .info{
+    
     font-size: 1.2em;
     /*aparecer de abajo hacia arriba*/
     animation: aparecer1 2s ease 1 both;
 }
+
 .seccion .p{}
 .seccion .grid{
     max-width: 40em;
@@ -329,7 +338,7 @@ de ul, es decir el segundo li con etiqueta a*/
     
     display: grid;
     margin: 2em 0 ;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     /*separar uno del otro*/
     gap: 1em;
     
@@ -338,7 +347,7 @@ de ul, es decir el segundo li con etiqueta a*/
 .seccion .article{
     margin: auto;
     width: 100%;
-    /*background: lightgoldenrodyellow;*/
+    
     min-height: 20vh;
     display: flex;
     flex-flow: column nowrap;
@@ -350,17 +359,13 @@ de ul, es decir el segundo li con etiqueta a*/
     
 }
 .seccion .a{}
-.seccion .figure{
-    width: 100%;
-    /*background: red;*/
-}
 .seccion .img{
     margin: 0 .5rem 0 .5rem;
-    width: 100%;
+    
     height: 450px;
     justify-content: center;
     align-items: center;
-    /*background: greenyellow;*/
+    
     
 }
 
@@ -420,7 +425,7 @@ de ul, es decir el segundo li con etiqueta a*/
 .trabajos .p{
 font-family: var(--tipo-titular);
 text-transform: uppercase;
-/*background: green;*/
+
 }
 
 .acercade{
@@ -434,7 +439,7 @@ text-transform: uppercase;
 }
 .acercade .p{
     max-width: 40rem;
-    /*background: greenyellow;*/
+    
     /*alineo a la izquierda*/
     text-align: left;
     /*arriba, a la derecha, abajo, a la izquierda*/
@@ -446,7 +451,7 @@ text-transform: uppercase;
 .acercade .redessociales{
     margin: 5rem 0 0 0;
     width: 100%;
-    /*background: lightgreen;*/
+ 
     list-style: none;
     display: flex;
     flex-flow: row wrap;
@@ -455,13 +460,13 @@ text-transform: uppercase;
 }
 .acercade .li{
     margin: 0 1em;
-    /*background: orange;*/
+   
 }
 .acercade .a{}
 .acercade .svg{
     width: 2em;
     height: 2em;
-    /*background: red;*/
+    
 }
 
 .footer{
@@ -506,8 +511,8 @@ text-transform: uppercase;
     ahí mientras el usuario hace scroll. El elemento no conserva su espacio en el flujo, todo el espacio que tuviera 
     reservado ese elemento desaparece. ↕️↔️ top, right, bottom, left*/
     position: fixed;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     background: #e0e0e0;
     left: 0;
     top: 0;
@@ -521,6 +526,25 @@ text-transform: uppercase;
     mix-blend-mode: difference;
 }
 
+/*agrego .mini para con js achicar el cursor cuando pasa por
+un enlace*/
+
+/*prestar atencion que vayan pegados*/
+#cursor.mini{
+    transform: scale(0.4);
+    /*que hace ease?
+        ease-in comenzará la animación lentamente y 
+        finalizará a toda velocidad.
+        ease-out iniciará la animación a toda velocidad, luego 
+        terminará lentamente.
+        ease-in-out comenzará lentamente, será más rápido en el 
+        medio de la animación y luego terminará lentamente.
+        ease es como easy-in-out, excepto que comienza ligeramente
+        más rápido de lo que termina.
+        linear no usa relajación.*/
+    transition: all .2s linear;
+}
+
 
 
 
@@ -530,3 +554,18 @@ text-transform: uppercase;
 	from{width:100%}
 	to{width:0}
 }
+
+/*EM y REM TEORIA
+
+1 em es igual a 16px
+pero em siempre hereda del elemento padre
+es decir que si el hijo de un primer contenedor usa 1em
+va a ser en relacion al em que uso su elento padre
+
+si en el primer contenedor se uso 1em (=== a 16px)
+en su hijo 1em sera ==== a 32px*
+es mejor para tipografias.
+
+rem no tiene en cuenta al elemento padre,
+asiq sera siempre igual a 16px
+es mejor para margenes*/

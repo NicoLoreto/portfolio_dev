@@ -36,9 +36,22 @@ $(document).ready(function(){
         tengo que restar la mitad del ancho del cursor,
         como son 5rem, 5 por 16 es 80 80 /2 son 40px*/
         $('#cursor').css({
-            'left' : (clientX - 40) + 'px',
-            'top': (clientY - 40) + 'px'
+            'left' : (clientX - 32) + 'px',
+            'top': (clientY - 32) + 'px'
         })
     }})
+
+    /*cuando a una etiqueta a le pase el cursor se ejecutara 
+    mouseover y cuando salga mouseout*/
+    $('a').on({
+        'mouseover': function(){
+            /*agrega la clase .mini*/
+            $('#cursor').addClass('mini')
+        },
+        'mouseout' : function(){
+            /*elimina la clase mini*/
+            $('#cursor').removeClass('mini')
+        },
+    })
 
 })
