@@ -27,6 +27,8 @@
     margin: 0;
     padding: 0;
     border: 0;
+    /*para el responsive, que no aparezca el
+    scroll horizontal*/
     box-sizing: border-box;
     /*Alinea la línea base del elemento con la línea base del padre. La línea base de algunos elementos reemplazados (en-US), como <textarea> no está especificado en la especificación HTML, que significa que su comportamiento puede cambiar en un navegador u otro.*/
     vertical-align: baseline;
@@ -119,6 +121,11 @@ body{
 
 /*FONDO CIRCULOS*/
 
+.container{
+    display: flex;
+    /*para que los elementos puedan moverse*/
+    flex-wrap: wrap;
+}
 .circulos{
     /*posicion fija*/
     position:fixed;
@@ -545,6 +552,15 @@ un enlace*/
     transition: all .2s linear;
 }
 
+/*cuando sea menor a 360px*/
+@media (max-width: 360px){
+    .seccion{
+        font-size: .5em;
+    }
+    #cursor{
+        display: none;
+    }
+}
 
 
 
