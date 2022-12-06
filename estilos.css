@@ -39,6 +39,8 @@ img, figure{
 }
 
 a{
+    /*para que no aparezca la manito*/
+    cursor: none;
     display: block;
     text-decoration: none;
     color: inherit;
@@ -99,6 +101,8 @@ select{
 }
 
 body{
+    /*para que no aparezca la flecha del cursor*/
+    cursor: none;
     font-family: var(--tipo-principal);
     font-size: 100%;
     min-height: 100vh;
@@ -353,7 +357,7 @@ de ul, es decir el segundo li con etiqueta a*/
 .seccion .img{
     margin: 0 .5rem 0 .5rem;
     width: 100%;
-    height: 500px;
+    height: 450px;
     justify-content: center;
     align-items: center;
     /*background: greenyellow;*/
@@ -403,7 +407,6 @@ de ul, es decir el segundo li con etiqueta a*/
     border-bottom: 1px solid white;
     border-top: 1px solid white;
     background-color: rgba(8, 7, 7, 0.411);
-    margin: auto;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -496,6 +499,32 @@ text-transform: uppercase;
         transform: translateY(0%)
     }
 }
+
+#cursor{
+    /*fixed hace que un elemento se coloque respecto al 
+    viewport, Le dices dónde posicionarse al elemento, y se queda 
+    ahí mientras el usuario hace scroll. El elemento no conserva su espacio en el flujo, todo el espacio que tuviera 
+    reservado ese elemento desaparece. ↕️↔️ top, right, bottom, left*/
+    position: fixed;
+    width: 5rem;
+    height: 5rem;
+    background: #e0e0e0;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    /*establece bajo qué circunstancias (si las hay) 
+    un elemento gráfico particular 
+    puede convertirse en el objetivo de los eventos de puntero.*/
+    pointer-events: none;
+    border-radius: 50%;
+    /*cambia el color cuando cambia el color detras*/
+    mix-blend-mode: difference;
+}
+
+
+
+
+
 
 /*@keyframes escribiendo{
 	from{width:100%}
