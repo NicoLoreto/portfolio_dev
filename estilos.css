@@ -552,8 +552,8 @@ un enlace*/
     transition: all .2s linear;
 }
 
-/*cuando sea menor a 360px*/
-@media (max-width: 360px){
+/*cuando sea menor a 380px*/
+@media (max-width: 380px){
     .seccion{
         font-size: .5em;
     }
