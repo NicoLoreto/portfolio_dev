@@ -369,7 +369,7 @@ de ul, es decir el segundo li con etiqueta a*/
 .seccion .img{
     margin: 0 .5rem 0 .5rem;
     
-    height: 450px;
+    height: 370px;
     justify-content: center;
     align-items: center;
     
@@ -568,13 +568,17 @@ un enlace*/
         cursor:pointer;
     }
     .acercade .p{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .acercade .svg{
         width: 6em;
         height: 6em;
         
+    }
+
+    .seccion .img{
+        height: 300px;
     }
 }
 
