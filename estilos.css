@@ -367,9 +367,9 @@ de ul, es decir el segundo li con etiqueta a*/
 }
 .seccion .a{}
 .seccion .img{
-    margin: 0 .5rem 0 .5rem;
-    
-    height: 370px;
+    margin: 4rem .5rem 10rem .5rem;
+    width: 20rem;
+    height: 30rem;
     justify-content: center;
     align-items: center;
     
@@ -387,6 +387,7 @@ de ul, es decir el segundo li con etiqueta a*/
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
     /*filtro la imagen*/
     backdrop-filter: blur(1rem);
     /*opacidad*/
@@ -395,6 +396,7 @@ de ul, es decir el segundo li con etiqueta a*/
     color: rgb(22, 15, 15);
     font-size: 1.5em;
     text-transform: uppercase;
+    margin-bottom: 3rem;
     
     /*efecto en el eje X para generear movimiento*/
     /*transform: translateX(100%);*/
@@ -413,7 +415,6 @@ de ul, es decir el segundo li con etiqueta a*/
 }
 
 .trabajos{
-    
     margin-top: 5em;
     border-bottom: 1px solid white;
     border-top: 1px solid white;
@@ -428,15 +429,38 @@ de ul, es decir el segundo li con etiqueta a*/
     
 }
 
+.tecnologias{
+    border-bottom: 1px solid white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.tecnologias .svg{
+    margin: 3rem;
+    width: 8rem;
+    height: 8rem;
+}
 
+.tecnologias .h2{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
 
+.tecnologias .h4{
+    color: #e0e0e0;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0rem;
+}
 .acercade{
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 .acercade .h2{
-    margin: 0 0 4rem;
+    margin: 3rem 0 4rem;
 
 }
 .acercade .p{
@@ -549,7 +573,6 @@ un enlace*/
     transition: all .2s linear;
 }
 
-/*cuando sea menor a 920px*/
 @media (max-width: 920px){
     body{
         cursor:auto;
@@ -577,7 +600,8 @@ un enlace*/
         margin-bottom: 7rem;
     }
     .seccion .img{
-        height: 300px;
+        height: 25rem;
+       margin: 1rem 0 1rem 0;
     }
     .seccion .ul .li{
         width: 10rem;
@@ -585,6 +609,22 @@ un enlace*/
         margin-top: 5rem;
         
     }
+    .seccion .h4{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+    .tecnologias .h4{
+        margin-bottom: 0rem;
+
+    }
+    .tecnologias .svg{
+        width: 4rem;
+        height: 4rem;
+       
+}
 }
 
 
@@ -595,18 +635,14 @@ un enlace*/
 	from{width:100%}
 	to{width:0}
 }
-
 /*EM y REM TEORIA
-
 1 em es igual a 16px
 pero em siempre hereda del elemento padre
 es decir que si el hijo de un primer contenedor usa 1em
 va a ser en relacion al em que uso su elento padre
-
 si en el primer contenedor se uso 1em (=== a 16px)
 en su hijo 1em sera ==== a 32px*
 es mejor para tipografias.
-
 rem no tiene en cuenta al elemento padre,
 asiq sera siempre igual a 16px
 es mejor para margenes*/
