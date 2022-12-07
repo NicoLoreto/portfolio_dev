@@ -393,10 +393,9 @@ de ul, es decir el segundo li con etiqueta a*/
     opacity: 0;
     transition: all .5s ease;
     color: rgb(22, 15, 15);
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-transform: uppercase;
-    font-family: var(--tipo-titular);
-    font-style: italic;
+    
     /*efecto en el eje X para generear movimiento*/
     /*transform: translateX(100%);*/
 
@@ -429,11 +428,7 @@ de ul, es decir el segundo li con etiqueta a*/
     
 }
 
-.trabajos .p{
-font-family: var(--tipo-titular);
-text-transform: uppercase;
 
-}
 
 .acercade{
     justify-content: center;
@@ -449,9 +444,10 @@ text-transform: uppercase;
     
     /*alineo a la izquierda*/
     text-align: left;
+    
     /*arriba, a la derecha, abajo, a la izquierda*/
     margin: 0 0 1rem;
-    font-size: 1.2em;
+    font-size: 1.4em;
     justify-content: center;
     align-items: center;
 }
@@ -531,7 +527,7 @@ text-transform: uppercase;
     pointer-events: none;
     border-radius: 50%;
     /*cambia el color cuando cambia el color detras*/
-    mix-blend-mode: difference;
+    mix-blend-mode:difference;
 }
 
 /*agrego .mini para con js achicar el cursor cuando pasa por
@@ -553,12 +549,8 @@ un enlace*/
     transition: all .2s linear;
 }
 
-/*cuando sea menor a 720px*/
+/*cuando sea menor a 920px*/
 @media (max-width: 920px){
-    .seccion{
-        font-size: .5em;
-        
-    }
     body{
         cursor:auto;
     }
@@ -577,9 +569,21 @@ un enlace*/
         height: 6em;
         
     }
-
+    .seccion{
+        font-size: .5em;
+        
+    }
+    .seccion .info{
+        margin-bottom: 7rem;
+    }
     .seccion .img{
         height: 300px;
+    }
+    .seccion .ul .li{
+        width: 10rem;
+        font-size: 1rem;
+        margin-top: 5rem;
+        
     }
 }
 
