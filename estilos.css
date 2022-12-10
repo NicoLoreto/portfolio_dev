@@ -192,36 +192,48 @@ right: 0%;
 
 
 .header{
-    width: 100%;
+    /* width: 100%;
     /*nunca usar altura si no es una posiscion absoluta
     nunca en porcentaje
     usar minimo de altura*/
-    min-height: 5em;
+    min-height: 1rem;
     /*background: lightskyblue;*/
     /*con padding agrego espacio entre los elementos
     1 por arriba y por abajo y 2 por cada lateral*/
-    padding: 1em 2em;
-/*para alinear uno al lado del otro anado flex*/
-    display: none;
+    padding: 0;
+    margin: 0;
+    /*para alinear uno al lado del otro anado flex*/
     flex-flow: row wrap;
     /* con space - between todo el espacio disponible se coloca entre el 
     primer y el último artículo, empujando ambos artículos hacia los bordes 
     opuestos del contenedor.*/
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 2em 0;
     text-align: center;
     z-index: 2;
     position: relative;
 }
-.header .h1{
-    /*background: lightgrey;*/
+/* .header .h1{
+    background: lightgrey;
     
+} */
+.header .a{
+    /* border-bottom: .1px solid #e0e0e0; */
+    padding: .7rem;
+    font-weight: 300;
+    font-size: .7rem;
+
 }
-.header .h1 .a{
-    
+
+.header .a:hover{
+    /* border-bottom: .4px solid #e0e0e0; */
+    font-weight: 600;
 }
 .header .nav{
+    background:rgba(8, 7, 7, 0.411);
+    padding: .4rem;
+    
+    text-transform: uppercase;
     
 }
 .header .ul{
@@ -230,15 +242,14 @@ right: 0%;
     /* con space - between todo el espacio disponible se coloca entre el primer y el último artículo, empujando ambos artículos hacia los bordes opuestos del contenedor.*/
     justify-content: space-between;
     align-items: center;
+    
 }
 .header .ul .li{
     /*margen por lado de 1em*/
     list-style: none; /* Quitamos los marcadores */
     margin: 0 1em;
     /*background: rgb(153, 207, 153);*/
-}
-.header .ul .li .a{
-
+    
 }
 
 /*MAIN*/
@@ -334,7 +345,7 @@ de ul, es decir el segundo li con etiqueta a*/
     
 }
 .seccion .info{
-    
+    margin-top: .2rem; 
     font-size: 1.2em;
     /*aparecer de abajo hacia arriba*/
     animation: aparecer1 2s ease 1 both;
@@ -429,7 +440,6 @@ de ul, es decir el segundo li con etiqueta a*/
     
     margin-top: 5rem;
     color: inherit;
-    background: red;
    
     
 }
@@ -439,6 +449,7 @@ de ul, es decir el segundo li con etiqueta a*/
     text-align: center;
     justify-content: center;
     align-items: center;
+   
 }
 .tecnologias .svg{
     margin: 3rem;
@@ -458,6 +469,26 @@ de ul, es decir el segundo li con etiqueta a*/
     align-items: center;
     justify-content: center;
     margin-bottom: 0rem;
+}
+
+.formacion{
+    border-bottom: 1px solid white;
+}
+.formacion .h2{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.formacion .p{
+    max-width: 40rem;
+    
+    /*alineo a la izquierda*/
+    text-align: left;
+    
+    /*arriba, a la derecha, abajo, a la izquierda*/
+    margin: 0 0 1rem;
+    font-size: 1.4em;
+    justify-content: center;
+    align-items: center;
 }
 .acercade{
     justify-content: center;
@@ -588,6 +619,18 @@ un enlace*/
     }
     a{
         cursor:pointer;
+    }
+    .header .nav{
+        padding: .2rem;
+    }
+    .header .a{
+        font-size: .5rem;
+        
+        padding: .4rem;
+    }
+    .trabajos .h2{
+        margin-top: 5rem;
+        margin-bottom: 3rem;
     }
     .acercade .p{
         font-size: 1.5rem;
