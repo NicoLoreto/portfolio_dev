@@ -56,3 +56,24 @@ $(document).ready(function(){
 
 })
 
+//hacer que cambie el background cuando corre
+// el scroll
+
+$(document).ready(function(){
+// // asigno a una variable
+// la altura que tiene
+// la parte superior del sitio
+    var altura = $('.nav').offset().top;
+//accedo al evento .on de windows
+// para tomar el scroll
+$(window).on('scroll', function(){
+    if ($(window).scrollTop()>altura){
+        // si el scroll es mayor a la altura agrega al elemento header la clase menu-fleible
+        // si no lo es la remueve
+        $('.nav').addClass('menu-flexible');
+    }else{ $('.nav').removeClass('menu-flexible');
+
+    }
+})
+})
+

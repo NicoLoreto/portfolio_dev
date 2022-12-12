@@ -192,7 +192,9 @@ right: 0%;
 }
 
 
+
 .header{
+    display: none;
     /* width: 100%;
     /*nunca usar altura si no es una posiscion absoluta
     nunca en porcentaje
@@ -222,7 +224,7 @@ right: 0%;
     /* border-bottom: .1px solid #e0e0e0; */
     padding: .7rem;
     font-weight: 300;
-    font-size: .7rem;
+    font-size: .8rem;
 
 }
 
@@ -230,18 +232,19 @@ right: 0%;
     /* border-bottom: .4px solid #e0e0e0; */
     font-weight: 600;
 }
-.header .nav{
-    background:rgba(8, 7, 7, 0.750);
+.nav {
+    background:rgba(8, 7, 7, 0.881);
     padding: .4rem;
    
     text-transform: uppercase;
 }
 
-#nav{ 
+.menu-flexible{ 
     width: 100%;
+    
     /* menu fijo en pantalla */
     position: fixed;
-   
+    background:rgba(8, 7, 7, 0.653);
     /* pegado a la parte superior */
     top: 0; 
 }
@@ -261,6 +264,7 @@ right: 0%;
     /*background: rgb(153, 207, 153);*/
     
 }
+
 
 /*MAIN*/
 
