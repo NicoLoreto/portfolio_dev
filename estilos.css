@@ -50,17 +50,18 @@ a{
     color: inherit;
     transition: all .5s ease;
     animation: aparecer1 3s ease 1 backwards;
+    /* background: red; */
 
 }
 
-video{
+/* video{
     max-width: 100%;
     width: 100%;
     display: flex;
     object-fit: cover;
     object-position: center center;
 
-}
+} */
 
 p a{
     display: inline;
@@ -70,12 +71,12 @@ li{
     list-style-type: none;
 }
 
-table,
+/* table,
 tr,
 td{
     border-collapse: collapse;
     border-spacing: 0;
-}
+} */
 
 html{
     scroll-behavior: smooth;
@@ -210,7 +211,7 @@ right: 0%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 2;
+    z-index: 3;
     position: relative;
 }
 /* .header .h1{
@@ -230,12 +231,21 @@ right: 0%;
     font-weight: 600;
 }
 .header .nav{
-    background:rgba(8, 7, 7, 0.411);
+    background:rgba(8, 7, 7, 0.750);
     padding: .4rem;
-    
+   
     text-transform: uppercase;
-    
 }
+
+#nav{ 
+    width: 100%;
+    /* menu fijo en pantalla */
+    position: fixed;
+   
+    /* pegado a la parte superior */
+    top: 0; 
+}
+
 .header .ul{
     display: flex;
     flex-flow: row wrap;
@@ -291,7 +301,7 @@ right: 0%;
 .seccion .ul .li .a{
     /*subrayo por encima*/
     border-top: 1px solid rgb(255,255,255,.2);
-
+    
     /*redondeo*/
     /*border-radius: 50%;*/
     /*border: 1px solid rgb(0,0,0,.2);*/
@@ -573,7 +583,9 @@ de ul, es decir el segundo li con etiqueta a*/
 #cursor{
     /*fixed hace que un elemento se coloque respecto al 
     viewport, Le dices dónde posicionarse al elemento, y se queda 
-    ahí mientras el usuario hace scroll. El elemento no conserva su espacio en el flujo, todo el espacio que tuviera 
+    ahí mientras el usuario hace scroll. El elemento no 
+    conserva su espacio en el flujo, todo el espacio que 
+    tuviera 
     reservado ese elemento desaparece. ↕️↔️ top, right, bottom, left*/
     position: fixed;
     width: 4rem;
@@ -581,7 +593,7 @@ de ul, es decir el segundo li con etiqueta a*/
     background: #e0e0e0;
     left: 0;
     top: 0;
-    z-index: 3;
+    z-index: 4;
     /*establece bajo qué circunstancias (si las hay) 
     un elemento gráfico particular 
     puede convertirse en el objetivo de los eventos de puntero.*/

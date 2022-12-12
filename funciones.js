@@ -56,29 +56,3 @@ $(document).ready(function(){
 
 })
 
-// hacer que aparezca y desaparezca el nav al hacer scroll
-
-// asigno el valor de la ubicacion del scroll
-// a partir de su Y
-
-let ubicacionPrincipal = window.pageYOffset
-
-// asigno el valor #nav a una variable
-
-let $nav = document.querySelector("#nav")
-
-//hago el evento en windows de tipo scroll 
-//y la funcion
-
-window.addEventListener("scroll", function(){
-    //hago una variable para mostrar
-    //la ubicacion actual
-    let ubicacionActual = window.pageYOffset;
-    console.log(ubicacionActual)
-    if (ubicacionPrincipal >= ubicacionActual){
-        $nav.style.top = "2rem"
-    }else{
-        $nav.style.top = "-2rem"
-    }
-    ubicacionPrincipal = ubicacionActual
-})
