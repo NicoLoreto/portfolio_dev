@@ -304,7 +304,8 @@ right: 0%;
 }
 .seccion .ul .li .a{
     /*subrayo por encima*/
-    border-top: 1px solid rgb(255,255,255,.2);
+    border: 1px solid rgb(255,255,255,.2);
+    border-radius: 50%;
     
     /*redondeo*/
     /*border-radius: 50%;*/
@@ -394,9 +395,9 @@ de ul, es decir el segundo li con etiqueta a*/
 }
 .seccion .a{}
 .seccion .img{
-    margin: 4rem .5rem 10rem .5rem;
+    margin: 4rem .5rem 1rem .5rem;
     width: 30rem;
-    height: 24rem;
+    height: 20rem;
     justify-content: center;
     align-items: center;
     
@@ -423,7 +424,7 @@ de ul, es decir el segundo li con etiqueta a*/
     color: rgb(22, 15, 15);
     font-size: 1.5em;
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     
     /*efecto en el eje X para generear movimiento*/
     /*transform: translateX(100%);*/
@@ -432,6 +433,10 @@ de ul, es decir el segundo li con etiqueta a*/
     para evitar el fail translateZ que siempre este en 1*/
 
     transform: translateZ(1) scale(1.2);
+}
+
+#blanco{
+    color: white;
 }
 
 .seccion .article:hover .h4{
@@ -624,6 +629,26 @@ un enlace*/
         más rápido de lo que termina.
         linear no usa relajación.*/
     transition: all .1s linear;
+}
+
+.cv .a{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    border: 1px solid rgb(255,255,255,.2);
+    border-radius: 50%;
+    padding: 1.5rem;
+    
+}
+
+.cv .a:hover{
+    background-color: #e0e0e0;
+    color: #181818;
+    border-color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+  
 }
 
 @media (max-width: 920px){
