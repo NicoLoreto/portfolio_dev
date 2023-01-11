@@ -366,7 +366,9 @@ de ul, es decir el segundo li con etiqueta a*/
     animation: aparecer1 2s ease 1 both;
 }
 
-.seccion .p{}
+.seccion .p{
+    
+}
 .seccion .grid{
     max-width: 40em;
     width: 90%;
@@ -404,26 +406,35 @@ de ul, es decir el segundo li con etiqueta a*/
     
 }
 
-.seccion .h4{
+.seccion .titulo-descripcion{
+    /* background: red; */
     width: 100%;
     height: 100%;
+    /* margin: 0rem;
+    margin-bottom: 0;
+    padding: 0; */
     background-color: rgb(255,255,255,rgba(0, 0, 0, 0.5));
     position: absolute;
     bottom: 0;
     left: 0;
+    top: 0;
+    
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
+
+
+
     /*filtro la imagen*/
     backdrop-filter: blur(1rem);
     /*opacidad*/
     opacity: 0;
     transition: all .5s ease;
     color: rgb(22, 15, 15);
-    font-size: 1.5em;
-    text-transform: uppercase;
+    /* font-size: 1.5em;
+    text-transform: uppercase; */
     /* margin-bottom: 3rem; */
     
     /*efecto en el eje X para generear movimiento*/
@@ -435,11 +446,42 @@ de ul, es decir el segundo li con etiqueta a*/
     transform: translateZ(1) scale(1.2);
 }
 
-#blanco{
-    color: white;
+.seccion .h4{
+    width: 100%;
+    margin-top: 7rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0rem;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    
 }
 
-.seccion .article:hover .h4{
+.seccion .titulo-descripcion .p{
+    display: flex;
+    text-align:center;
+    align-items:center;
+    margin-bottom: 5rem;
+    padding: 1rem;    
+    width: 100%;
+    /* background: gray; */
+    mix-blend-mode:multiply;
+    font-size: .9rem;
+    
+}
+
+#blanco{
+    color: white;
+    
+}
+
+#textoMayor{
+    margin-bottom: 4rem;
+}
+
+.seccion .article:hover .titulo-descripcion{
     opacity: 1;
     /*transform: translateX(0%);*/
     transform: translateZ(1) scale(1);
@@ -481,7 +523,7 @@ de ul, es decir el segundo li con etiqueta a*/
     margin-bottom: 3rem
 }
 
-.tecnologias .h4{
+.tecnologias .h4 .p{
     color: #e0e0e0;
     text-transform: uppercase;
     text-align: center;
@@ -545,7 +587,7 @@ de ul, es decir el segundo li con etiqueta a*/
     margin: 0 1em;
    
 }
-.acercade .a{}
+
 .acercade .svg{
     width: 2em;
     height: 2em;
@@ -563,9 +605,7 @@ de ul, es decir el segundo li con etiqueta a*/
    
     
 }
-.footer .span{
 
-}
 
   /*ANIMACION*/
     
