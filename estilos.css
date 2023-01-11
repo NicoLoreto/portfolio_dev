@@ -468,7 +468,7 @@ de ul, es decir el segundo li con etiqueta a*/
     width: 100%;
     /* background: gray; */
     mix-blend-mode:multiply;
-    font-size: .9rem;
+    font-size: 1.3rem;
     
 }
 
@@ -479,9 +479,22 @@ de ul, es decir el segundo li con etiqueta a*/
 
 #textoMayor{
     margin-bottom: 4rem;
+    
+}
+
+#trabajosCentrado{
+    text-align: center;
+    margin-top: 11rem;
 }
 
 .seccion .article:hover .titulo-descripcion{
+    opacity: 1;
+    /*transform: translateX(0%);*/
+    transform: translateZ(1) scale(1);
+
+}
+
+.grid .article .a:hover .h4{
     opacity: 1;
     /*transform: translateX(0%);*/
     transform: translateZ(1) scale(1);
@@ -523,7 +536,7 @@ de ul, es decir el segundo li con etiqueta a*/
     margin-bottom: 3rem
 }
 
-.tecnologias .h4 .p{
+.tecnologias .h4 {
     color: #e0e0e0;
     text-transform: uppercase;
     text-align: center;
