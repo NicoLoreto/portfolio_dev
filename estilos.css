@@ -479,6 +479,12 @@ de ul, es decir el segundo li con etiqueta a*/
     
 }
 
+#gris{
+    color:#181818;
+    text-align: center;
+    align-items: center;
+}
+
 #textoMayor{
     margin-bottom: 4rem;
     text-transform:uppercase;
