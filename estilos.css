@@ -30,7 +30,9 @@
     /*para el responsive, que no aparezca el
     scroll horizontal*/
     box-sizing: border-box;
-    /*Alinea la línea base del elemento con la línea base del padre. La línea base de algunos elementos reemplazados (en-US), como <textarea> no está especificado en la especificación HTML, que significa que su comportamiento puede cambiar en un navegador u otro.*/
+    /*Alinea la línea base del elemento con la línea base del padre. 
+    La línea base de algunos elementos reemplazados (en-US), como <textarea> no está especificado en la 
+    especificación HTML, que significa que su comportamiento puede cambiar en un navegador u otro.*/
     vertical-align: baseline;
 }
 
@@ -467,7 +469,7 @@ de ul, es decir el segundo li con etiqueta a*/
     padding: 1rem;    
     width: 100%;
     /* background: gray; */
-    mix-blend-mode:multiply;
+    /* mix-blend-mode:multiply; */
     text-transform:uppercase;
     font-size: .8rem;
     line-height: 1.2rem
