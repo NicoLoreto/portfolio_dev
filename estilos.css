@@ -822,7 +822,7 @@ un enlace*/
     }
 }
 
-@media only screen and (min-width: 1280px){
+@media only screen and (min-width: 1280px) and (max-width: 1919px){
     .info{
         height: 35rem;
     }
