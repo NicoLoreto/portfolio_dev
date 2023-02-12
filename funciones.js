@@ -24,7 +24,7 @@ $(document).ready(function(){
 
     $('body').on({ 'mousemove' : function(e){
         /*Limpia la consola para no molestar*/
-        console.clear();
+        // console.clear();
         /*guardo posicion X del mouse en una variable*/
         let clientX = e.originalEvent.clientX;
         /*guardo posicion Y del mouse en una variable*/
@@ -60,7 +60,7 @@ $(document).ready(function(){
 // el scroll
 
 $(document).ready(function(){
-// // asigno a una variable
+// asigno a una variable
 // la altura que tiene
 // la parte superior del sitio
     var altura = $('.nav').offset().top;
