@@ -810,11 +810,13 @@ un enlace*/
 
 }
 
-@media only screen and (min-width: 1920px){
+@media only screen and (min-width: 820px){
     .info{
-        height: 59rem;
+        height: 65rem;
     }
 }
+
+
 
 
 
