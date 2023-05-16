@@ -27,12 +27,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    /*para el responsive, que no aparezca el
-    scroll horizontal*/
     box-sizing: border-box;
-    /*Alinea la línea base del elemento con la línea base del padre. 
-    La línea base de algunos elementos reemplazados (en-US), como <textarea> no está especificado en la 
-    especificación HTML, que significa que su comportamiento puede cambiar en un navegador u otro.*/
     vertical-align: baseline;
 }
 
@@ -45,25 +40,15 @@ img, figure{
 }
 
 a{
-    /*para que no aparezca la manito*/
     cursor: none;
     display: block;
     text-decoration: none;
     color: inherit;
     transition: all .5s ease;
     animation: aparecer1 3s ease 1 backwards;
-    /* background: red; */
 
 }
 
-/* video{
-    max-width: 100%;
-    width: 100%;
-    display: flex;
-    object-fit: cover;
-    object-position: center center;
-
-} */
 
 p a{
     display: inline;
@@ -73,25 +58,14 @@ li{
     list-style-type: none;
 }
 
-/* table,
-tr,
-td{
-    border-collapse: collapse;
-    border-spacing: 0;
-} */
 
 html{
     scroll-behavior: smooth;
 }
 
-h1,
-h2,
-h3,
-h4,
 h5,
 h6{
-    /*Hace que el elemento al cual se aplica tome el valor calculado de la propiedad de su elemento padre.*/
-    color: inherit;
+   
     font-weight: inherit;
     font-size: inherit;
 }
@@ -110,7 +84,6 @@ select{
 }
 
 body{
-    /*para que no aparezca la flecha del cursor*/
     cursor: none;
     font-family: var(--tipo-principal);
     font-size: 100%;
@@ -126,27 +99,19 @@ body{
 
 .container{
     display: flex;
-    /*para que los elementos puedan moverse*/
     flex-wrap: wrap;
 }
 .circulos{
-    /*posicion fija*/
     position:fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-  
-    /*Cuando varios elementos se superponen, los elementos 
-    con mayor valor 
-    z-index cubren aquellos con menor valor.*/
     z-index: 1;
     animation:circulo 20s linear infinite both;
 }
 .circulos .circulo{
-    /*en la pag https://www.blobmaker.app/ puedo amrar y 
-    usar los svg como quiera
-    y copiar el codigo*/
+    /*https://www.blobmaker.app/ */
     position:absolute;
     width: 50%;
     height: 50%;
@@ -197,33 +162,18 @@ right: 0%;
 
 .header{
     display: none;
-    /* width: 100%;
-    /*nunca usar altura si no es una posiscion absoluta
-    nunca en porcentaje
-    usar minimo de altura*/
     min-height: 1rem;
-    /*background: lightskyblue;*/
-    /*con padding agrego espacio entre los elementos
-    1 por arriba y por abajo y 2 por cada lateral*/
     padding: 0;
     margin: 0;
-    /*para alinear uno al lado del otro anado flex*/
     flex-flow: row wrap;
-    /* con space - between todo el espacio disponible se coloca entre el 
-    primer y el último artículo, empujando ambos artículos hacia los bordes 
-    opuestos del contenedor.*/
     justify-content: center;
     align-items: center;
     text-align: center;
     z-index: 3;
     position: relative;
 }
-/* .header .h1{
-    background: lightgrey;
-    
-} */
+
 .header .a{
-    /* border-bottom: .1px solid #e0e0e0; */
     padding: .7rem;
     font-weight: 300;
     font-size: .8rem;
@@ -231,7 +181,6 @@ right: 0%;
 }
 
 .header .a:hover{
-    /* border-bottom: .4px solid #e0e0e0; */
     font-weight: 600;
 }
 .nav {
@@ -244,27 +193,22 @@ right: 0%;
 
 .menu-flexible{ 
     width: 100%;
-    
-    /* menu fijo en pantalla */
     position: fixed;
     background:rgba(8, 7, 7, 0.653);
-    /* pegado a la parte superior */
     top: 0; 
 }
 
 .header .ul{
     display: flex;
     flex-flow: row wrap;
-    /* con space - between todo el espacio disponible se coloca entre el primer y el último artículo, empujando ambos artículos hacia los bordes opuestos del contenedor.*/
     justify-content: space-between;
     align-items: center;
     
 }
 .header .ul .li{
-    /*margen por lado de 1em*/
-    list-style: none; /* Quitamos los marcadores */
+
+    list-style: none; 
     margin: 0 1em;
-    /*background: rgb(153, 207, 153);*/
     
 }
 
@@ -273,7 +217,6 @@ right: 0%;
 
 .main{
     
-    /*hago un margin para que se separe*/
     margin: 0 0 0em;
     text-align: center;
     position: relative;
@@ -281,11 +224,8 @@ right: 0%;
 }
 .seccion{
     
-    /*vh se usa para el tamano de la pantalla*/
+
     min-height: 80vh;
-    
-    /*separo con margin*/
-    /*margin: 1em 0;*/
     text-align: center;
     display: flex;
     flex-flow: column wrap;
@@ -306,34 +246,19 @@ right: 0%;
     margin: 0 1em;
 }
 .seccion .ul .li .a{
-    /*subrayo por encima*/
+
     border: 1px solid rgb(255,255,255,.2);
     border-radius: 50%;
-    
-    /*redondeo*/
-    /*border-radius: 50%;*/
-    /*border: 1px solid rgb(0,0,0,.2);*/
     padding: 1em 1em 1em;
     text-transform: uppercase;
     font-weight: 600;
-    /*Permite definir la transición entre dos estados de 
-    un elemento. Hay diferentes estados que pueden ser definidos 
-    utilizando pseudo-clases (en-US) como :hover o :active o 
-    aplicado dinámicamente usando JavaScript.*/
-   
-}
 
-/*que la segunda etiqueta a haga una animacion distinta, que entre
-mas tarde
-notar que con ul>:nth-child(2) me refiero al segundo hijo
-de ul, es decir el segundo li con etiqueta a*/
+}
 
 .seccion .ul>:nth-child(2) .a{
     animation-delay: 1s;
 }
 
-
-/*cuando entre el mouse pasara esto*/
 .seccion .ul .li .a:hover{
    border-color: #e0e0e0;
    border: 1px solid #e0e0e0;
@@ -346,11 +271,8 @@ de ul, es decir el segundo li con etiqueta a*/
     color: #e0e0e0;
     font-family: var(--tipo-titular);
     font-size: 5em;
-    /*negrita*/
     font-weight: 600;
     line-height: 1em;
-    /*hace efectors de photoshop*/
-    /*mix-blend-mode: multiply;*/
     
     
     
@@ -358,14 +280,11 @@ de ul, es decir el segundo li con etiqueta a*/
 .seccion .h3{
     font-family: var(--tipo-titular);
     font-size: 4.3em;
-    /*que aparezca una letra por vez*/
-    /*animation: escribiendo 5s steps(36, end);*/
     
 }
 .seccion .info{
     margin-top: .2rem; 
     font-size: 1.2em;
-    /*aparecer de abajo hacia arriba*/
     animation: aparecer1 2s ease 1 both;
 }
 
@@ -379,7 +298,6 @@ de ul, es decir el segundo li con etiqueta a*/
     display: grid;
     margin: 2em 0 ;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    /*separar uno del otro*/
     gap: 1em;
     
     
@@ -394,7 +312,6 @@ de ul, es decir el segundo li con etiqueta a*/
     justify-content: center;
     align-items: center;
     position: relative;
-    /*para que no sobrepase cuando haga el efecto traslate*/
     overflow: hidden;
     
 }
@@ -410,12 +327,9 @@ de ul, es decir el segundo li con etiqueta a*/
 }
 
 .seccion .titulo-descripcion{
-    /* background: red; */
+
     width: 100%;
     height: 100%;
-    /* margin: 0rem;
-    margin-bottom: 0;
-    padding: 0; */
     background-color: rgb(255,255,255,rgba(0, 0, 0, 0.5));
     position: absolute;
     bottom: 0;
@@ -427,24 +341,11 @@ de ul, es decir el segundo li con etiqueta a*/
     justify-content: center;
     align-items: center;
     text-align: center;
-
-
-
-    /*filtro la imagen*/
     backdrop-filter: blur(1rem);
-    /*opacidad*/
+
     opacity: 0;
     transition: all .5s ease;
     color: rgb(22, 15, 15);
-    /* font-size: 1.5em;
-    text-transform: uppercase; */
-    /* margin-bottom: 3rem; */
-    
-    /*efecto en el eje X para generear movimiento*/
-    /*transform: translateX(100%);*/
-
-    /*efecto de adentro para afuera con scale,
-    para evitar el fail translateZ que siempre este en 1*/
 
     transform: translateZ(1) scale(1.2);
 }
@@ -469,8 +370,6 @@ de ul, es decir el segundo li con etiqueta a*/
     margin-bottom: 5rem;
     padding: 1rem;    
     width: 100%;
-    /* background: gray; */
-    /* mix-blend-mode:multiply; */
     text-transform:uppercase;
     font-size: .8rem;
     line-height: 1.2rem
@@ -504,14 +403,12 @@ de ul, es decir el segundo li con etiqueta a*/
 
 .seccion .article:hover .titulo-descripcion{
     opacity: 1;
-    /*transform: translateX(0%);*/
     transform: translateZ(1) scale(1);
 
 }
 
 .grid .article .a:hover .h4{
     opacity: 1;
-    /*transform: translateX(0%);*/
     transform: translateZ(1) scale(1);
 
 }
@@ -569,11 +466,7 @@ de ul, es decir el segundo li con etiqueta a*/
 }
 .formacion .p{
     max-width: 40rem;
-    
-    /*alineo a la izquierda*/
     text-align: left;
-    
-    /*arriba, a la derecha, abajo, a la izquierda*/
     margin: 0 0 1rem;
     font-size: 1.4em;
     justify-content: center;
@@ -590,12 +483,9 @@ de ul, es decir el segundo li con etiqueta a*/
 
 }
 .acercade .p{
+
     max-width: 40rem;
-    
-    /*alineo a la izquierda*/
     text-align: left;
-    
-    /*arriba, a la derecha, abajo, a la izquierda*/
     margin: 0 0 1rem;
     font-size: 1.4em;
     justify-content: center;
@@ -624,8 +514,7 @@ de ul, es decir el segundo li con etiqueta a*/
 }
 
 .footer{
-    
-    /*padding por arriba y por abajo*/
+
     padding: 2em 0;
     text-align: center;
     z-index: 2;
@@ -658,12 +547,7 @@ de ul, es decir el segundo li con etiqueta a*/
 }
 
 #cursor{
-    /*fixed hace que un elemento se coloque respecto al 
-    viewport, Le dices dónde posicionarse al elemento, y se queda 
-    ahí mientras el usuario hace scroll. El elemento no 
-    conserva su espacio en el flujo, todo el espacio que 
-    tuviera 
-    reservado ese elemento desaparece. ↕️↔️ top, right, bottom, left*/
+  
     position: fixed;
     width: 4rem;
     height: 4rem;
@@ -671,31 +555,17 @@ de ul, es decir el segundo li con etiqueta a*/
     left: 0;
     top: 0;
     z-index: 4;
-    /*establece bajo qué circunstancias (si las hay) 
-    un elemento gráfico particular 
-    puede convertirse en el objetivo de los eventos de puntero.*/
+
     pointer-events: none;
     border-radius: 50%;
-    /*cambia el color cuando cambia el color detras*/
+
     mix-blend-mode:difference;
 }
 
-/*agrego .mini para con js achicar el cursor cuando pasa por
-un enlace*/
 
-/*prestar atencion que vayan pegados*/
 #cursor.mini{
     transform: scale(0.4);
-    /*que hace ease?
-        ease-in comenzará la animación lentamente y 
-        finalizará a toda velocidad.
-        ease-out iniciará la animación a toda velocidad, luego 
-        terminará lentamente.
-        ease-in-out comenzará lentamente, será más rápido en el 
-        medio de la animación y luego terminará lentamente.
-        ease es como easy-in-out, excepto que comienza ligeramente
-        más rápido de lo que termina.
-        linear no usa relajación.*/
+  
     transition: all .1s linear;
 }
 
@@ -809,46 +679,3 @@ un enlace*/
     }
 
 }
-
-/* @media only screen and (min-width: 820px)and (max-width: 1023px){
-    .info{
-        height: 65rem;
-    }
-}
-
-@media only screen and (min-width: 1280px) and (max-width: 1919px){
-    .info{
-        height: 35rem;
-    }
-}
-
-
-
-@media only screen and (min-width: 1920px){
-    .info{
-        height: 59rem;
-    }
-} */
-
-
-
-
-
-
-
-
-/*@keyframes escribiendo{
-	from{width:100%}
-	to{width:0}
-}
-/*EM y REM TEORIA
-1 em es igual a 16px
-pero em siempre hereda del elemento padre
-es decir que si el hijo de un primer contenedor usa 1em
-va a ser en relacion al em que uso su elento padre
-si en el primer contenedor se uso 1em (=== a 16px)
-en su hijo 1em sera ==== a 32px*
-es mejor para tipografias.
-rem no tiene en cuenta al elemento padre,
-asiq sera siempre igual a 16px
-es mejor para margenes*/
