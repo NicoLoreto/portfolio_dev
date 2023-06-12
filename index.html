@@ -1,280 +1,685 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" type = "text/css" href="estilos.css"> 
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="estilos.css"
+    >
     <title>Nico Loreto | Portfolio profesional developer</title>
     <!--JQUERY-->
-    <script defer src="jquery.js"></script>
-    <script defer src="funciones.js"></script>
+    <script
+        defer
+        src="jquery.js"
+    ></script>
+    <script
+        defer
+        src="funciones.js"
+    ></script>
 </head>
 <div class="container"></div>
+
 <body>
-    
+
     <!--CURSOR-->
-  <div id="cursor">
-    
-  </div>
-    <div class="circulos">
-        
-        <!-- https://www.blobmaker.app/ -->
- 
-        <svg class = "circulo circulo1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path class = "path" d="M40.1,-53.2C48.8,-40.5,50.4,-24.9,56.7,-7.3C62.9,10.2,73.7,29.5,68.5,40.4C63.2,51.3,41.8,53.7,23.9,56.1C5.9,58.6,-8.6,61,-26,59.7C-43.4,58.4,-63.6,53.4,-69.9,41.1C-76.2,28.7,-68.5,9,-60.4,-6.1C-52.3,-21.1,-43.8,-31.5,-33.6,-43.9C-23.5,-56.3,-11.7,-70.7,2,-73C15.7,-75.4,31.5,-65.8,40.1,-53.2Z" transform="translate(100 100)" />
-          </svg>
-          <svg class = "circulo circulo2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path  class = "path" d="M41.4,-59.6C56.2,-54.8,72.7,-47.8,78.3,-35.7C83.8,-23.7,78.5,-6.6,75,10.1C71.6,26.9,70.2,43.2,60.4,49.7C50.7,56.1,32.6,52.7,17.8,54.1C3,55.5,-8.5,61.7,-17.8,59.5C-27.1,57.2,-34.3,46.6,-46.8,37.5C-59.4,28.5,-77.4,21.1,-83.1,9.4C-88.9,-2.4,-82.3,-18.5,-73.3,-31.5C-64.3,-44.5,-52.8,-54.4,-40.2,-60.2C-27.5,-66.1,-13.8,-67.9,-0.3,-67.5C13.3,-67.1,26.5,-64.5,41.4,-59.6Z" transform="translate(100 100)" />
-          </svg>
-          <svg class = "circulo circulo3" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path class = "path" d="M55.2,-64.1C67.5,-55.4,70.8,-34.2,71.2,-15C71.7,4.2,69.4,21.5,62.6,38.8C55.8,56.1,44.4,73.4,29.8,76.4C15.2,79.3,-2.7,67.9,-18,58.4C-33.3,48.9,-46,41.4,-53.2,30.1C-60.5,18.9,-62.2,3.8,-59.7,-10.6C-57.2,-24.9,-50.5,-38.6,-39.9,-47.6C-29.2,-56.6,-14.6,-61.1,3.4,-65.1C21.4,-69.2,42.8,-72.9,55.2,-64.1Z" transform="translate(100 100)" />
-          </svg>
-          <svg class = "circulo circulo4" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path  class = "path" d="M66.7,-21.2C73.2,-1.7,56.1,26,32.5,42.6C8.9,59.2,-21.1,64.8,-41.4,51.4C-61.8,38,-72.4,5.5,-63.8,-16.8C-55.3,-39.2,-27.7,-51.4,1.2,-51.8C30.1,-52.2,60.2,-40.8,66.7,-21.2Z" transform="translate(100 100)" />
-          </svg>
+    <div id="cursor">
+
     </div>
-   
+    <div class="circulos">
+
+        <!-- https://www.blobmaker.app/ -->
+
+        <svg
+            class="circulo circulo1"
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                class="path"
+                d="M40.1,-53.2C48.8,-40.5,50.4,-24.9,56.7,-7.3C62.9,10.2,73.7,29.5,68.5,40.4C63.2,51.3,41.8,53.7,23.9,56.1C5.9,58.6,-8.6,61,-26,59.7C-43.4,58.4,-63.6,53.4,-69.9,41.1C-76.2,28.7,-68.5,9,-60.4,-6.1C-52.3,-21.1,-43.8,-31.5,-33.6,-43.9C-23.5,-56.3,-11.7,-70.7,2,-73C15.7,-75.4,31.5,-65.8,40.1,-53.2Z"
+                transform="translate(100 100)"
+            />
+        </svg>
+        <svg
+            class="circulo circulo2"
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                class="path"
+                d="M41.4,-59.6C56.2,-54.8,72.7,-47.8,78.3,-35.7C83.8,-23.7,78.5,-6.6,75,10.1C71.6,26.9,70.2,43.2,60.4,49.7C50.7,56.1,32.6,52.7,17.8,54.1C3,55.5,-8.5,61.7,-17.8,59.5C-27.1,57.2,-34.3,46.6,-46.8,37.5C-59.4,28.5,-77.4,21.1,-83.1,9.4C-88.9,-2.4,-82.3,-18.5,-73.3,-31.5C-64.3,-44.5,-52.8,-54.4,-40.2,-60.2C-27.5,-66.1,-13.8,-67.9,-0.3,-67.5C13.3,-67.1,26.5,-64.5,41.4,-59.6Z"
+                transform="translate(100 100)"
+            />
+        </svg>
+        <svg
+            class="circulo circulo3"
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                class="path"
+                d="M55.2,-64.1C67.5,-55.4,70.8,-34.2,71.2,-15C71.7,4.2,69.4,21.5,62.6,38.8C55.8,56.1,44.4,73.4,29.8,76.4C15.2,79.3,-2.7,67.9,-18,58.4C-33.3,48.9,-46,41.4,-53.2,30.1C-60.5,18.9,-62.2,3.8,-59.7,-10.6C-57.2,-24.9,-50.5,-38.6,-39.9,-47.6C-29.2,-56.6,-14.6,-61.1,3.4,-65.1C21.4,-69.2,42.8,-72.9,55.2,-64.1Z"
+                transform="translate(100 100)"
+            />
+        </svg>
+        <svg
+            class="circulo circulo4"
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                class="path"
+                d="M66.7,-21.2C73.2,-1.7,56.1,26,32.5,42.6C8.9,59.2,-21.1,64.8,-41.4,51.4C-61.8,38,-72.4,5.5,-63.8,-16.8C-55.3,-39.2,-27.7,-51.4,1.2,-51.8C30.1,-52.2,60.2,-40.8,66.7,-21.2Z"
+                transform="translate(100 100)"
+            />
+        </svg>
+    </div>
+
     <header class="header">
-       
-        <nav class="nav" id="nav">
+
+        <nav
+            class="nav"
+            id="nav"
+        >
             <ul class="ul">
-                <li class="li"><a href="#Inicio" class="a" title="Inicio">Inicio</a></li>
-                <li class="li"><a href="#Trabajos" class="a" title="Trabajos">Trabajos</a></li>
-                <li class="li"><a href="#tecnologias" class="a" title="Tecnologías">Tecnologías</a></li>
-                <li class="li"><a href="#acercade" class="a" title="Acerca de">Acerca de</a></li>
+                <li class="li"><a
+                        href="#Inicio"
+                        class="a"
+                        title="Inicio"
+                    >Inicio</a></li>
+                <li class="li"><a
+                        href="#Trabajos"
+                        class="a"
+                        title="Trabajos"
+                    >Trabajos</a></li>
+                <li class="li"><a
+                        href="#tecnologias"
+                        class="a"
+                        title="Tecnologías"
+                    >Tecnologías</a></li>
+                <li class="li"><a
+                        href="#acercade"
+                        class="a"
+                        title="Acerca de"
+                    >Acerca de</a></li>
             </ul>
         </nav>
     </header>
 
     <!--MAIN-->
-    
+
     <main class="main">
 
-        <div class="seccion" id="Inicio">
-           
+        <div
+            class="seccion"
+            id="Inicio"
+        >
+
             <seccion class="seccion info">
                 <h2 class="h2">Nico Loreto
                     <h3 class="h3">Desarrollador Web</h3>
                 </h2>
-            <ul class="ul">
-                
-                <li class="li">
-                    <a href="https://www.linkedin.com/in/nico-loreto-7b420a206" class="a" title="Linkedin" target="_blank">Visitar mi Linkedin</a>
-                </li>
-                <li class="li">
-                    <a href="https://github.com/NicoLoreto" class="a" title="Github" target="_blank">Visitar mi Github</a>
-                </li>
-            </ul>
-            </seccion>
-        
-        </div>
-            <seccion class="seccion trabajos" id="Trabajos">
-                <h2 class="h2">Trabajos</h2>
-              
-                <div class="grid">
-                   
-                    <article class="article">
-                        <a class = "a" href="https://github.com/FrancoSer/ISPC_2do_semestre_2022" title="HCP" target="_blank">
-                            <figure class="figure">
-                                <img src="assets/HCP.jpg" alt="imagen - HCP" class="img img1" loading="lazy">
-                            </figure>
-                            <div class="titulo-descripcion">
-                                <h4 class="h4">Historia Clínica Personal</h4>
-                                <p class="p" id = "textoMayor">HCP es un software que permite visualizar, editar y 
-                                    actualizar el historial clínico de un paciente por parte de un profesional de la salud</br>
-                                  
-                                </p>
-                            </div>
-                        
-                           
-                        </a>
-                    </article>
+                <ul class="ul">
 
-                    <article class="article">
-                        <a class = "a" href="https://nicoloreto.github.io/PaisesApp/" title="Paises-App" target="_blank">
-                            <figure class="figure">
-                                <img src="assets/paisesApp.png" alt="imagen-Paises-App" class="img" loading="lazy">
-                            </figure>
-                            <div class="titulo-descripcion">
-                                <h4 class="h4">Paises-App</h4>
-                                <p class="p" id="gris">Aplicación para obtener información acerca de países; como el 
-                                    código internacional, su densidad demográfica o sus países limítrofes. Consume la API de restcountries.com,
-                                    fue desarrollada con Angular 15
-                            .</p>
-                            </div>
-                        </a>
-                    </article> 
-                   
-                    <article class="article">
-                        <a class = "a" href="https://nicoloreto.github.io/textosAleatoriosDeAlejandraPizarnik.githube.io/" title="Poesía aleatoria" target="_blank">
-                            <figure class="figure">
-                                <img src="assets/poesia-resp.png" alt="imagen - Posía aleatoria" class="img" loading="lazy">
-                            </figure>
-                            <div class="titulo-descripcion">
-                                <h4 class="h4">Poesía aleatoria</h4>
-                                <p class="p">Página web destinada a arrojar textos aleatorios de la poeta argentina Alejandra Pizarnik</p>
-                            </div>
-                        </a>
-                    </article> 
-                    
-                    <article class="article">
-                        <a class = "a" href="https://nicoloreto.github.io/portfolio_dev/" title="Portfolio" target="_blank">
-                            <figure class="figure">
-                                <img src="assets/portfolio.png" alt="imagen - Portfolio" class="img" loading="lazy">
-                            </figure>
-                            <div class="titulo-descripcion" id = "">
-                                <h4 class="h4" >Porfolio</h4>
-                                <p class="p" id="trabajosCentrado">Estás en este proyecto ahora</p>
-                            </div>
-                        </a>
-                    </article> 
-                    <article class="article">
-                        <a class = "a" href="https://nicoloreto.github.io/GifsApp/" title="Gifs-App" target="_blank">
-                            <figure class="figure">
-                                <img src="assets/gifs.png" alt="imagen-Gifs-App" class="img" loading="lazy">
-                            </figure>
-                            <div class="titulo-descripcion">
-                                <h4 class="h4">Gifs-App</h4>
-                                <p class="p" id="gris">Aplicación para buscar gifs y almacenarlos en un hitorial. Consume la API de 
-                                    giphy.com. Fue desarrollada con Angular 15
-                                </p>
-                            </div>
-                        </a>
-                    </article> 
-            </div>
-            </seccion>
-
-            <seccion class="seccion tecnologias" id = "tecnologias">
-                <h2 class="h2">Tecnologías</h2>
-                <div class="grid">
-                    <article class="article">
-                        <a href="https://developer.mozilla.org/es/docs/Web/HTML" class="a" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
-                            </svg>
-                            <!-- HTML5 -->
-                        </a>
-                    </article>
-                    <article class="article">
-                        <a href="https://developer.mozilla.org/es/docs/Web/CSS" class="a"  target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z"/>
-                              </svg>
-                              <!-- CSS3 -->
-                        </a>
-                    </article>
-                    <article class="article">
-                        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" class="a"  target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"/>
-                              </svg>
-                              <!--JavaScript-->
-                        </a>
-                    </article>
-                    <article class="article">
-                        <a href="https://developer.mozilla.org/es/docs/Glossary/Python" class="a"  target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 11.85h1.6c.289 0 .533.06.732.179.201.117.355.276.46.477.105.201.158.427.158.677 0 .25-.054.476-.16.677-.106.199-.26.357-.464.474a1.452 1.452 0 0 1-.732.173H.79v1.342H0V11.85Zm2.06 1.714a.795.795 0 0 0 .085-.381c0-.227-.062-.4-.185-.521-.123-.122-.294-.182-.513-.182H.788v1.406h.66a.794.794 0 0 0 .374-.082.574.574 0 0 0 .238-.24Zm2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855l-1.339 2.464Z"/>
-                              </svg>
-                              <!-- Python -->
-                        </a>
-                    </article>
-                    <article class="article">
-                        <a href="https://developer.mozilla.org/es/docs/Glossary/Git" class="a"  target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                                <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"/>
-                              </svg>
-                              <!-- >GIT -->
-                        </a>
-                    </article>
-                    <article class="article">
-                        <a href="https://conociendogithub.readthedocs.io/en/latest/data/introduccion/#:~:text=GitHub%20es%20una%20plataforma%20de%20desarrollo%20colaborativo%20de,de%20forma%20privada%2C%20creando%20una%20cuenta%20de%20pago." class="a"  target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                            </svg>
-                            <!-- GITHUB -->
-                        </a>
-                    </article>
-                    <article class="article">
-                        <a href="https://developer.mozilla.org/es/docs/Glossary/SQL" class="a"  target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 14.841a1.129 1.129 0 0 0 .401.823c.13.108.288.192.478.252s.411.091.665.091c.338 0 .624-.053.858-.158.237-.106.416-.252.54-.44a1.17 1.17 0 0 0 .187-.656c0-.224-.045-.41-.135-.56a1 1 0 0 0-.375-.357 2.027 2.027 0 0 0-.565-.21l-.621-.144a.97.97 0 0 1-.405-.176.369.369 0 0 1-.143-.299c0-.156.061-.284.184-.384.125-.101.296-.152.513-.152.143 0 .266.022.37.068a.624.624 0 0 1 .245.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.199-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.552.05-.776.15-.225.099-.4.24-.528.421-.127.182-.19.395-.19.639 0 .201.04.376.123.524.082.149.199.27.351.367.153.095.332.167.54.213l.618.144c.207.049.36.113.462.193a.387.387 0 0 1 .153.325c0 .11-.029.207-.085.29A.558.558 0 0 1 2 15.31c-.111.047-.249.07-.413.07-.117 0-.224-.013-.32-.04a.835.835 0 0 1-.248-.115.579.579 0 0 1-.255-.384H0Zm6.878 1.489-.507-.739c.176-.162.31-.362.401-.6.092-.239.138-.507.138-.806v-.501c0-.371-.07-.693-.208-.967a1.495 1.495 0 0 0-.589-.636c-.256-.15-.561-.225-.917-.225-.351 0-.656.075-.914.225-.256.149-.453.36-.592.636a2.138 2.138 0 0 0-.205.967v.5c0 .37.069.691.205.965.139.273.336.485.592.636a1.8 1.8 0 0 0 .914.222 1.8 1.8 0 0 0 .6-.1l.294.422h.788ZM4.262 14.2v-.522c0-.246.038-.456.114-.63a.91.91 0 0 1 .325-.398.885.885 0 0 1 .495-.138c.192 0 .357.046.495.138a.88.88 0 0 1 .325.398c.077.174.115.384.115.63v.522c0 .164-.018.312-.053.445-.035.13-.087.244-.155.34l-.106-.14-.105-.147h-.733l.451.65a.638.638 0 0 1-.251.047.872.872 0 0 1-.487-.147.916.916 0 0 1-.32-.404 1.67 1.67 0 0 1-.11-.644Zm3.986 1.057h1.696v.674H7.457v-3.999h.79v3.325Z"/>
-                              </svg>
-                              <!-- SQL -->
-                        </a>
-                    </article>
-                    <article class="article">
-                        <a href="https://institutocajasol.com/que-es-wordpress-y-como-funciona/" class="a"  target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                                <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/>
-                                <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/>
-                                <path fill-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/>
-                              </svg>
-                              <!-- WordrPress -->
-                        </a>
-                    </article>
-                </div>
-            </seccion>
-          
-            <seccion class="seccion acercade" id="acercade">
-                <h2 class="h2">Acerca de</h2>
-                    <p class="p">
-                        
-                        Comencé a estudiar programación a finales de 2021 a través de cursos online.
-                        Actualmente estoy cursando el segundo año de la Tecnicatura en Desarrollo Web y Aplicaciones Digitales en el Instituto Superior Politécnico 
-                        de Córdoba (I.S.P.C) . </br> 
-                        En el enlace a GitHub encontrarán los proyectos en los que estoy trabajando actualmente.</p> 
-
-                    <p class="p">
-
-                        Estudié Psicología en la Universidad Nacional de Rosario (U.N.R).</br> 
-                        Soy músico compositor.</br> 
-                        Me interesa aprender continuamente y desarrollarme desde un perfil proactivo y trabajando en equipo.
-
-                    </p>
-                    <div class="cv">
-                        <a link="Nicolás-Loreto" href="00-Nicolás-Loreto.pdf" class="a" target="_blank">Ver CV</a>
-                        <a download="Desarrollador Frontend - Nicolás-Loreto" href="00-Nicolás-Loreto.pdf" class="a">Descargar CV</a>
-                    </div>
-                <ul class="redessociales">
-                                <li class="li">
-                        <a href="https://github.com/NicoLoreto" class="a" title="Github" target="_blank" rel="noopener noreference">
-    
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                              </svg>
-                        </a>
+                    <li class="li">
+                        <a
+                            href="https://www.linkedin.com/in/nico-loreto-7b420a206"
+                            class="a"
+                            title="Linkedin"
+                            target="_blank"
+                        >Visitar mi Linkedin</a>
                     </li>
                     <li class="li">
-                        <a href="https://www.linkedin.com/in/nico-loreto/" class="a" title="Linkedin" target="_blank" rel="noopener noreference">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                              </svg>
-                        </a>
+                        <a
+                            href="https://github.com/NicoLoreto"
+                            class="a"
+                            title="Github"
+                            target="_blank"
+                        >Visitar mi Github</a>
                     </li>
                 </ul>
-                
             </seccion>
-           
+
+        </div>
+        <seccion
+            class="seccion trabajos"
+            id="Trabajos"
+        >
+            <h2 class="h2">Trabajos</h2>
+
+            <div class="grid">
+
+                <article class="article">
+                    <a
+                        class="a"
+                        href="https://github.com/FrancoSer/ISPC_2do_semestre_2022"
+                        title="HCP"
+                        target="_blank"
+                    >
+                        <figure class="figure">
+                            <img
+                                src="assets/HCP.jpg"
+                                alt="imagen - HCP"
+                                class="img img1"
+                                loading="lazy"
+                            >
+                        </figure>
+                        <div class="titulo-descripcion">
+                            <h4 class="h4">Historia Clínica Personal</h4>
+                            <p
+                                class="p"
+                                id="textoMayor"
+                            >HCP es un software que permite visualizar, editar y
+                                actualizar el historial clínico de un paciente por parte de un profesional de la
+                                salud</br>
+
+                            </p>
+                        </div>
+
+
+                    </a>
+                </article>
+
+                <article class="article">
+                    <a
+                        class="a"
+                        href="https://macrotecnica.co"
+                        title="Macrotécnica"
+                        target="_blank"
+                    >
+                        <figure class="figure">
+                            <img
+                                src="assets/Frame 373.png"
+                                alt="imagen - Macrotécnica"
+                                class="img img1"
+                                loading="lazy"
+                            >
+                        </figure>
+                        <div class="titulo-descripcion">
+                            <h4 class="h4">Macrotécnica</h4>
+                            <p
+                                class="p"
+                                id="textoMayor"
+                            >
+                                Desarrollo del sitio oficial de la empresa.
+                                Junto a Noelia Valle (Diseño UX/UI) y Andrés Cuervo (DevOps)
+
+                                </br>
+
+                            </p>
+                        </div>
+
+
+                    </a>
+                </article>
+
+                <article class="article">
+                    <a
+                        class="a"
+                        href="https://viajesubito.com"
+                        title="Viaje Súbito"
+                        target="_blank"
+                    >
+                        <figure class="figure">
+                            <img
+                                src="assets/vs.png"
+                                alt="imagen - Viaje Súbito"
+                                class="img img1"
+                                loading="lazy"
+                            >
+                        </figure>
+                        <div class="titulo-descripcion">
+                            <h4
+                                class="h4"
+                                id="blanco"
+                            >Viaje Súbito</h4>
+                            <p
+                                class="p"
+                                id="blanco"
+                            >
+                                Sitio web e-ccomerce
+
+                                </br>
+
+                            </p>
+                        </div>
+
+
+                    </a>
+                </article>
+
+                <article class="article">
+                    <a
+                        class="a"
+                        href="https://nicoloreto.github.io/PaisesApp/"
+                        title="Paises-App"
+                        target="_blank"
+                    >
+                        <figure class="figure">
+                            <img
+                                src="assets/paisesApp.png"
+                                alt="imagen-Paises-App"
+                                class="img"
+                                loading="lazy"
+                            >
+                        </figure>
+                        <div class="titulo-descripcion">
+                            <h4 class="h4">Paises-App</h4>
+                            <p
+                                class="p"
+                                id="gris"
+                            >Aplicación para obtener información acerca de países; como el
+                                código internacional, su densidad demográfica o sus países limítrofes. Consume la API de
+                                restcountries.com,
+                                fue desarrollada con Angular 15
+                                .</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="article">
+                    <a
+                        class="a"
+                        href="https://nicoloreto.github.io/textosAleatoriosDeAlejandraPizarnik.githube.io/"
+                        title="Poesía aleatoria"
+                        target="_blank"
+                    >
+                        <figure class="figure">
+                            <img
+                                src="assets/poesia-resp.png"
+                                alt="imagen - Posía aleatoria"
+                                class="img"
+                                loading="lazy"
+                            >
+                        </figure>
+                        <div class="titulo-descripcion">
+                            <h4 class="h4">Poesía aleatoria</h4>
+                            <p class="p">Página web destinada a arrojar textos aleatorios de la poeta argentina
+                                Alejandra Pizarnik</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- <article class="article">
+                    <a
+                        class="a"
+                        href="https://nicoloreto.github.io/portfolio_dev/"
+                        title="Portfolio"
+                        target="_blank"
+                    >
+                        <figure class="figure">
+                            <img
+                                src="assets/portfolio.png"
+                                alt="imagen - Portfolio"
+                                class="img"
+                                loading="lazy"
+                            >
+                        </figure>
+                        <div
+                            class="titulo-descripcion"
+                            id=""
+                        >
+                            <h4 class="h4">Porfolio</h4>
+                            <p
+                                class="p"
+                                id="trabajosCentrado"
+                            >Estás en este proyecto ahora</p>
+                        </div>
+                    </a>
+                </article> -->
+                <article class="article">
+                    <a
+                        class="a"
+                        href="https://nicoloreto.github.io/GifsApp/"
+                        title="Gifs-App"
+                        target="_blank"
+                    >
+                        <figure class="figure">
+                            <img
+                                src="assets/gifs.png"
+                                alt="imagen-Gifs-App"
+                                class="img"
+                                loading="lazy"
+                            >
+                        </figure>
+                        <div class="titulo-descripcion">
+                            <h4 class="h4">Gifs-App</h4>
+                            <p
+                                class="p"
+                                id="gris"
+                            >Aplicación para buscar gifs y almacenarlos en un hitorial. Consume la API de
+                                giphy.com. Fue desarrollada con Angular 15
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </seccion>
+
+        <seccion
+            class="seccion tecnologias"
+            id="tecnologias"
+        >
+            <h2 class="h2">Tecnologías</h2>
+            <div class="grid">
+                <article class="article">
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML"
+                        class="a"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="svg"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"
+                            />
+                        </svg>
+                        <!-- HTML5 -->
+                    </a>
+                </article>
+                <article class="article">
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/CSS"
+                        class="a"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="svg"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z"
+                            />
+                        </svg>
+                        <!-- CSS3 -->
+                    </a>
+                </article>
+
+                <!-- typesrcipt -->
+                <article class="article">
+                    <a
+                        href="https://www.w3schools.com/typescript/index.php"
+                        class="a"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            class="svg"
+                            fill="currentColor"
+                            class="bi bi-filetype-tsx"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.172 14.841a1.13 1.13 0 0 0 .401.823c.129.108.288.192.478.252.189.061.41.091.665.091.338 0 .624-.053.858-.158.236-.105.416-.252.54-.44a1.17 1.17 0 0 0 .187-.656c0-.224-.045-.41-.135-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.62-.144a.97.97 0 0 1-.405-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.513-.152.142 0 .265.023.369.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.292 0-.551.05-.776.15-.224.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.083.149.2.27.352.367.152.095.332.167.54.213l.617.144c.207.049.362.113.463.193a.387.387 0 0 1 .152.326.511.511 0 0 1-.084.29.559.559 0 0 1-.255.193 1.07 1.07 0 0 1-.413.07c-.118 0-.224-.013-.32-.04a.837.837 0 0 1-.249-.115.578.578 0 0 1-.255-.384h-.764Zm-1.244 1.09v-3.337h1.136v-.662H0v.662h1.134v3.337h.794Zm7.076-3.999h.893l-1.274 2.007 1.254 1.992h-.909l-.85-1.415h-.034l-.853 1.415H6.37l1.239-2.016-1.228-1.983h.932l.832 1.438h.035l.824-1.438Z"
+                            />
+                        </svg>
+
+                        <!-- CSS3 -->
+                    </a>
+                </article>
+                <!-- <article class="article">
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+                        class="a"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="svg"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"
+                            />
+                        </svg>
+                        JavaScript-->
+                <!-- </a>
+                </article>  -->
+                <article class="article">
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Glossary/Python"
+                        class="a"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="svg"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 11.85h1.6c.289 0 .533.06.732.179.201.117.355.276.46.477.105.201.158.427.158.677 0 .25-.054.476-.16.677-.106.199-.26.357-.464.474a1.452 1.452 0 0 1-.732.173H.79v1.342H0V11.85Zm2.06 1.714a.795.795 0 0 0 .085-.381c0-.227-.062-.4-.185-.521-.123-.122-.294-.182-.513-.182H.788v1.406h.66a.794.794 0 0 0 .374-.082.574.574 0 0 0 .238-.24Zm2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855l-1.339 2.464Z"
+                            />
+                        </svg>
+                        <!-- Python -->
+                    </a>
+                </article>
+                <article class="article">
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Glossary/Git"
+                        class="a"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="svg"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"
+                            />
+                        </svg>
+                        <!-- >GIT -->
+                    </a>
+                </article>
+                <article class="article">
+                    <a
+                        href="https://conociendogithub.readthedocs.io/en/latest/data/introduccion/#:~:text=GitHub%20es%20una%20plataforma%20de%20desarrollo%20colaborativo%20de,de%20forma%20privada%2C%20creando%20una%20cuenta%20de%20pago."
+                        class="a"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="svg"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                            />
+                        </svg>
+                        <!-- GITHUB -->
+                    </a>
+                </article>
+                <article class="article">
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Glossary/SQL"
+                        class="a"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="svg"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M14 4.5V14a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 14.841a1.129 1.129 0 0 0 .401.823c.13.108.288.192.478.252s.411.091.665.091c.338 0 .624-.053.858-.158.237-.106.416-.252.54-.44a1.17 1.17 0 0 0 .187-.656c0-.224-.045-.41-.135-.56a1 1 0 0 0-.375-.357 2.027 2.027 0 0 0-.565-.21l-.621-.144a.97.97 0 0 1-.405-.176.369.369 0 0 1-.143-.299c0-.156.061-.284.184-.384.125-.101.296-.152.513-.152.143 0 .266.022.37.068a.624.624 0 0 1 .245.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.199-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.552.05-.776.15-.225.099-.4.24-.528.421-.127.182-.19.395-.19.639 0 .201.04.376.123.524.082.149.199.27.351.367.153.095.332.167.54.213l.618.144c.207.049.36.113.462.193a.387.387 0 0 1 .153.325c0 .11-.029.207-.085.29A.558.558 0 0 1 2 15.31c-.111.047-.249.07-.413.07-.117 0-.224-.013-.32-.04a.835.835 0 0 1-.248-.115.579.579 0 0 1-.255-.384H0Zm6.878 1.489-.507-.739c.176-.162.31-.362.401-.6.092-.239.138-.507.138-.806v-.501c0-.371-.07-.693-.208-.967a1.495 1.495 0 0 0-.589-.636c-.256-.15-.561-.225-.917-.225-.351 0-.656.075-.914.225-.256.149-.453.36-.592.636a2.138 2.138 0 0 0-.205.967v.5c0 .37.069.691.205.965.139.273.336.485.592.636a1.8 1.8 0 0 0 .914.222 1.8 1.8 0 0 0 .6-.1l.294.422h.788ZM4.262 14.2v-.522c0-.246.038-.456.114-.63a.91.91 0 0 1 .325-.398.885.885 0 0 1 .495-.138c.192 0 .357.046.495.138a.88.88 0 0 1 .325.398c.077.174.115.384.115.63v.522c0 .164-.018.312-.053.445-.035.13-.087.244-.155.34l-.106-.14-.105-.147h-.733l.451.65a.638.638 0 0 1-.251.047.872.872 0 0 1-.487-.147.916.916 0 0 1-.32-.404 1.67 1.67 0 0 1-.11-.644Zm3.986 1.057h1.696v.674H7.457v-3.999h.79v3.325Z"
+                            />
+                        </svg>
+                        <!-- SQL -->
+                    </a>
+                </article>
+                <article class="article">
+                    <a
+                        href="https://institutocajasol.com/que-es-wordpress-y-como-funciona/"
+                        class="a"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="svg"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"
+                            />
+                            <path
+                                d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"
+                            />
+                        </svg>
+                        <!-- WordrPress -->
+                    </a>
+                </article>
+            </div>
+        </seccion>
+
+        <seccion
+            class="seccion acercade"
+            id="acercade"
+        >
+            <h2 class="h2">Acerca de</h2>
+            <p class="p">
+
+                Comencé a estudiar programación a finales de 2021 a través de cursos online.
+                Actualmente estoy cursando el segundo año de la Tecnicatura en Desarrollo Web y Aplicaciones Digitales
+                en el Instituto Superior Politécnico
+                de Córdoba (I.S.P.C) . </br><br>
+
+                Realicé proyectos de manera profesional para clientes dentro y fuera de Argentina. Trabajando en equipo
+                o de manera personal. <br><br>
+                En el enlace a GitHub encontrarán los proyectos en los que estoy trabajando actualmente.
+            </p>
+
+            <p class="p">
+
+                Estudié Psicología en la Universidad Nacional de Rosario (U.N.R).</br><br>
+                Soy músico compositor.</br><br>
+                Me interesa aprender continuamente y desarrollarme desde un perfil proactivo y trabajando en equipo.
+
+            </p>
+            <div class="cv">
+                <a
+                    link="Nicolás-Loreto"
+                    href="00-Nicolás-Loreto.pdf"
+                    class="a"
+                    target="_blank"
+                >Ver CV</a>
+                <a
+                    download="Desarrollador Frontend - Nicolás-Loreto"
+                    href="00-Nicolás-Loreto.pdf"
+                    class="a"
+                >Descargar CV</a>
+            </div>
+            <ul class="redessociales">
+                <li class="li">
+                    <a
+                        href="https://github.com/NicoLoreto"
+                        class="a"
+                        title="Github"
+                        target="_blank"
+                        rel="noopener noreference"
+                    >
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="svg"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                            />
+                        </svg>
+                    </a>
+                </li>
+                <li class="li">
+                    <a
+                        href="https://www.linkedin.com/in/nico-loreto/"
+                        class="a"
+                        title="Linkedin"
+                        target="_blank"
+                        rel="noopener noreference"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="svg"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                            />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+        </seccion>
+
     </main>
 
     <!--FOOTER-->
 
     <footer class="footer">
         <span class="span">
-            <p class="p">Hecho con amor ❤️ <a href = "#Inicio">Nico Loreto</a></p>
+            <p class="p">Hecho con amor ❤️ <a href="#Inicio">Nico Loreto</a></p>
         </span>
-       
+
     </footer>
-    
+
 </body>
 </div>
+
 </html>
-
-
-
-
-
-
