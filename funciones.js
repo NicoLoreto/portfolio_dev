@@ -7,7 +7,6 @@ del DOM*/
     console.log('holis')
 })*/
 
-
 /*cuando en todo el body paso el cursor (mousemove)*/
 /*el movimiento del mouse va a 
 generar un evento
@@ -18,62 +17,61 @@ desde el lado izquierdo al derecho*/
 
 /*tomo el evento con e*/
 
-'use strict'
+'use strict';
 
-$(document).ready(function(){
+$(document).ready(function () {
+  $('body').on({
+    mousemove: function (e) {
+      /*Limpia la consola para no molestar*/
+      // console.clear();
+      /*guardo posicion X del mouse en una variable*/
+      let clientX = e.originalEvent.clientX;
+      /*guardo posicion Y del mouse en una variable*/
+      let clientY = e.originalEvent.clientY;
 
-    $('body').on({ 'mousemove' : function(e){
-        /*Limpia la consola para no molestar*/
-        // console.clear();
-        /*guardo posicion X del mouse en una variable*/
-        let clientX = e.originalEvent.clientX;
-        /*guardo posicion Y del mouse en una variable*/
-        let clientY = e.originalEvent.clientY;
-        
-        /*en el css de #cursor agrego propiedades
+      /*en el css de #cursor agrego propiedades
         ahora el cursor va pegado al mouseS*/
-        /*para que quede la flecha del mouse en el centro
+      /*para que quede la flecha del mouse en el centro
         tengo que restar la mitad del ancho del cursor,
         como son 5rem, 5 por 16 es 80 80 /2 son 40px*/
-        $('#cursor').css({
-            'left' : (clientX - 32) + 'px',
-            'top': (clientY - 32) + 'px'
-        })
-    }})
+      $('#cursor').css({
+        left: clientX - 32 + 'px',
+        top: clientY - 32 + 'px',
+      });
+    },
+  });
 
-    /*cuando a una etiqueta a le pase el cursor se ejecutara 
+  /*cuando a una etiqueta a le pase el cursor se ejecutara 
     mouseover y cuando salga mouseout*/
-    $('a').on({
-        'mouseover': function(){
-            /*agrega la clase .mini*/
-            $('#cursor').addClass('mini')
-        },
-        'mouseout' : function(){
-            /*elimina la clase mini*/
-            $('#cursor').removeClass('mini')
-        },
-    })
-
-})
+  $('a').on({
+    mouseover: function () {
+      /*agrega la clase .mini*/
+      $('#cursor').addClass('mini');
+    },
+    mouseout: function () {
+      /*elimina la clase mini*/
+      $('#cursor').removeClass('mini');
+    },
+  });
+});
 
 //hacer que cambie el background cuando corre
 // el scroll
 
-$(document).ready(function(){
-// asigno a una variable
-// la altura que tiene
-// la parte superior del sitio
-    var altura = $('.nav').offset().top;
-//accedo al evento .on de windows
-// para tomar el scroll
-$(window).on('scroll', function(){
-    if ($(window).scrollTop()>altura){
-        // si el scroll es mayor a la altura agrega al elemento header la clase menu-fleible
-        // si no lo es la remueve
-        $('.nav').addClass('menu-flexible');
-    }else{ $('.nav').removeClass('menu-flexible');
-
+$(document).ready(function () {
+  // asigno a una variable
+  // la altura que tiene
+  // la parte superior del sitio
+  var altura = $('.nav').offset().top;
+  //accedo al evento .on de windows
+  // para tomar el scroll
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() > altura) {
+      // si el scroll es mayor a la altura agrega al elemento header la clase menu-fleible
+      // si no lo es la remueve
+      $('.nav').addClass('menu-flexible');
+    } else {
+      $('.nav').removeClass('menu-flexible');
     }
-})
-})
-
+  });
+});
